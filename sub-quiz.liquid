@@ -1,0 +1,118 @@
+{%- assign quiz_product = all_products['body-wash-body-lotion'] -%}
+
+<div class="quiz-wrap">
+  <h3 class="quiz-head">ADD CUSTOM BODY CARE</h3>
+  <div class="quiz-box">
+    <div class="quiz-tag"><span>Recommended for you</span></div>
+    <div class="quiz-i">
+      <div class="qz-img">
+        <img src="{{ quiz_product.featured_image | img_url: 'large' }}">
+      </div>
+      <div class="qz-info">
+        <h4 class="qz-title qz-font">Custom Body Care</h4>
+        <p class="qz-text">Why should your hair have it all? Add custom body wash + body lotion to your order, preorder at 30% off!</p>
+        <div class="qz-steps">
+          <div class="qz-step active qz-step-1">
+            <h4 class="head">Choose your gender</h4>
+            <div class="qz-body options" data-indx="1">
+              <span class="option qzOpt">Male</span>
+              <span class="option qzOpt">Female</span>
+            </div>
+          </div>
+          <div class="qz-step qz-step-2">
+            <div class="divider"><span></span></div>
+            <h4 class="head">Skin moisture level</h4>
+            <div class="qz-body options" data-indx="2">
+              <span class="option qzOpt">Very Dry</span>
+              <span class="option qzOpt">Balanced</span>
+              <span class="option qzOpt">Oily</span>
+            </div>
+          </div>
+          <div class="qz-step qz-step-3">
+            <div class="divider"><span></span></div>
+            <h4 class="head">How strong is your body odour?</h4>
+            <div class="qz-body options" data-indx="3">
+              <span class="option qzOpt">Negligible</span>
+              <span class="option qzOpt">Somewhat</span>
+              <span class="option qzOpt">Quite Strong</span>
+            </div>
+          </div>
+          <div class="qz-step qz-step-4">
+            <div class="divider"><span></span></div>
+            <h4 class="head">Select your fragrance</h4>
+            <div class="qz-body options stacked" data-indx="4">
+              <span class="option qzOpt">L(o)vender 💜</span>
+              <span class="option qzOpt">Berry Cherry 🍒</span>
+              <span class="option qzOpt">Fragrance free</span>
+            </div>
+          </div>
+          <div class="qz-step qz-step-5">
+            <div class="divider"><span></span></div>
+            <h4 class="head">Name on kit</h4>
+            <div class="qz-body" data-indx="5">
+              <input type="text" class="qzName" maxlength="10" placeholder="Enter name upto 10 characters">
+            </div>
+          </div>
+          <div class="qz-step color-step qz-step-6">
+            <div class="divider"><span></span></div>
+            <h4 class="head" data-indx="1">Body wash color</h4>
+            <div class="qz-body" data-indx="6">
+              <div class="color-img">
+                <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/bodywash1_200x.png?v=1625233667" class="active" data="Sky blue">
+                <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/bodywash2_200x.png?v=1625233667" data="Pink">
+                <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/bodywash3_200x.png?v=1625233666" data="Orange">
+                <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/bodywash4_200x.png?v=1625233666" data="Dye free">
+              </div>
+              <div class="qz-colors" color-indx="1">
+                <div class="colors-i">
+                  <div class="qz-color"><span class="qzColor" style="background-color: #b9e0e0;" data="Sky blue"></span></div>
+                  <div class="qz-color"><span class="qzColor" style="background-color: #fddedf;" data="Pink"></span></div>
+                  <div class="qz-color"><span class="qzColor" style="background-color: #fee5ca;" data="Orange"></span></div>
+                  <div class="qz-color"><span class="qzColor color-free" data="Dye free"></span></div>
+                </div>
+              </div>
+            </div>
+            <h4 class="head" data-indx="2">Body lotion color</h4>
+            <div class="qz-body" data-indx="6">
+              <div class="color-img">
+                <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/bodylotion1_200x.png?v=1625233318" class="active" data="Sky blue">
+                <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/bodylotion2_200x.png?v=1625233318" data="Pink">
+                <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/bodylotion3_200x.png?v=1625233318" data="Orange">
+                <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/bodylotion4_200x.png?v=1625233318" data="Dye free">
+              </div>
+              <div class="qz-colors" color-indx="2">
+                <div class="colors-i">
+                  <div class="qz-color"><span class="qzColor" style="background-color: #b9e0e0;" data="Sky blue"></span></div>
+                  <div class="qz-color"><span class="qzColor" style="background-color: #fddedf;" data="Pink"></span></div>
+                  <div class="qz-color"><span class="qzColor" style="background-color: #fee5ca;" data="Orange"></span></div>
+                  <div class="qz-color"><span class="qzColor color-free" data="Dye free"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qz-step qz-step-7 finalStep">
+            <div class="divider"><span></span></div>
+            <h4 class="head">Body wash + Body lotion</h4>
+            <div class="qz-body" data-indx="7">
+              <div class="combined-img final-image">
+                <img src="{{ quiz_product.featured_image | img_url: 'medium' }}" class="init-img">
+                <img src="{{ body_product.featured_image | img_url: 'medium' }}" class="sec-img">
+                <img src="{{ body_product.featured_image | img_url: 'medium' }}" class="sec-img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="qz-pricing">
+          <span class="qz-price regular-price">{{ quiz_product.price | money }}</span>{%- if quiz_product.compare_at_price > quiz_product.price -%}<span class="qz-price compare-price">{{ quiz_product.compare_at_price | money }}</span>{%- endif -%}
+          <p class="price-offer"></p>
+        </div>
+        <div class="qz-note">
+          <p>Why should have your hair have it all? Add the most customized bodycare to your cart</p>
+        </div>
+      </div>
+      <div class="subquiz-action">
+        <button class="btn-quiz btn-quiz-bg btnQuiz" data-id="{{ quiz_product.selected_or_first_available_variant.id }}"><span class="cap-font cap-add">Choose this set</span><span class="cap-added">Remove</span></button>
+      </div>
+    </div>
+  </div>
+</div>
