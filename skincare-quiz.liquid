@@ -1,0 +1,1402 @@
+{%- assign custom_collection = collections['skincare'] -%}
+{%- for product in custom_collection.products -%}
+  {% if product.metafields.custom.see_ingredients_and_more != blank %}
+    <div class='product-ingredients-id' id='product-{{ product.id }}'>
+      {{ product.metafields.custom.see_ingredients_and_more }}
+    </div>
+  {% endif %}
+{% endfor %}
+
+{%- assign totalSlides = 17 -%}
+<div class="quiz-wrap quizPage quiz-wrap-changes" data="1" total-slides="{{ totalSlides }}">
+<div class="quiz-pages">
+  <span class="currentPage">1</span> of <span class="totalPages">{{ totalSlides }}</span>
+</div>
+  <div class="container-fluid">
+    <div class="quiz-content">
+      <div class="quiz-steps quizSteps" data="1">
+        <div class="quiz-step active inputStep br_radius rounds_check _choiceStep" ara-height="true" data="1" index="1" key="What's your Gender?">
+          <script>
+window._Sendlane = window._Sendlane || [];
+_Sendlane.push({
+    event_id: 'N8YqRD7eupMXB'
+});
+</script>
+<script src="https://sendlane.com/scripts/pusher.js" async></script>
+          <div class="quiz-header">
+            <h2 class="head">What's your Gender?</h2>
+            <p>We're super inclusive. This plays a huge part in your formulas.</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2">
+              <div class="opt optRad toNextOpt optChoice _show_desc" data-index="1" value="Male">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Male</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice _show_desc" data-index="2" value="Female">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Female</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice _show_desc" data-index="3" value="Non binary">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Non Binary</div>
+              </div>
+            </div>
+          </div>
+            <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+      <div class="quiz-ask">
+        <p class="opt-text">WHY WE ASK:</p>
+        <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+      </div>
+      <div class="quiz-drawer-content">
+        <div class="quiz-drawer-content-text">
+          <div class="quiz-drawer-text">
+            <p>We ask because hormones play a big role behind the scenes in your skin.</p>
+          </div>
+        </div>
+        <div class="quiz-drawer-close">
+          <span>CLOSE x</span>
+        </div>
+      </div>
+    </div>
+        </div>
+  
+        <div class="quiz-step goalStep anim-fade text-font _choiceStep _goalStep2" data="2" index="2" key="What are your Skincare Goals?">
+          <div class="quiz-header">
+            <h2 class="head">What are your Skincare Goals?</h2>
+            <p>Select upto 4</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2 optGoals"></div>
+            <div class="desc visibly-hidden">
+              <h4 class="slctedOpt"></h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>We’re listening. Share multiple—your formulator will pick active ingredients for your unique needs.
+(Select upto 4)</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep goalStep border_radius optGoals_value anim-fade _choiceStep js_html_add" data="3" index="3" key="What is your skincare goal?">
+          <div class="quiz-header">
+            <h2 class="head">What's your main skincare goal?</h2>
+            <p>Out of the selected goals</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts optGoals_value_body _opts2">
+           {% comment %}   <div class="opt optRad toNextOpt optChoice" data-index="1" value="Brighten skin" desc="All skin can look a little dull and in need of a pick me up from time to time. This can be caused by many factors including dehydration.">
+                <div class="opt-icon">
+                  <span class="icon-plus"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/plus.png?v=1632825262"></span>
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Brighten skin</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice" data-index="2" value="Reduce breakout" desc="Breakouts of blemishes can appear anywhere on the face, but more commonly around the forehead, nose and chin. They can be intermittent or persistent.">
+                <div class="opt-icon">
+                  <span class="icon-plus"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/plus.png?v=1632825262"></span>
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Reduce breakout</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice" data-index="3" value="Reduce redness" desc="Solutions to target redness, often seen most prominently in the cheeks and more common in sensitive and dry skin types.">
+                <div class="opt-icon">
+                  <span class="icon-plus"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/plus.png?v=1632825262"></span>
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Reduce redness</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice" data-index="4" value="Reduce hyperpigmentation" desc="Often seen as dark spots, marks or uneven skin tone. Can be caused by post acne marks or sun damage.">
+                <div class="opt-icon">
+                  <span class="icon-plus"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/plus.png?v=1632825262"></span>
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Reduce redness</div>
+              </div>
+              {% endcomment %}
+            </div>
+          </div>
+          <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>This will help us narrow down the focus on what's the most important goal for you.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep br_radius rounds_check _choiceStep" data="4" index="4" key="How old are you?">
+          <div class="quiz-header">
+            <h2 class="head">How old are you?</h2>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2">
+              <div class="opt optRad toNextOpt optChoice _show_desc" data-index="1" value="Under 20 Years">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Under 20 Years</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice _show_desc" data-index="2" value="20-30">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">20-30</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice _show_desc" data-index="3" value="30-40">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">30-40</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice _show_desc" data-index="3" value="40-50">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">40-50</div>
+              </div>
+              <div class="opt optRad toNextOpt optChoice _show_desc" data-index="3" value="Above 50">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Above 50</div>
+              </div>
+            </div>
+          </div>
+         <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>Over the course of a lifetime, your skin goes through changes in texture, nourishment, and requirements, We’ll use this info to give you extra support at any stage.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep width_100 f-invert hg-height br_radius _choiceStep" data="5" index="5" key="What is your skin type?">
+          <div class="quiz-header">
+            <h2 class="head">What is your skin type?</h2>
+            <p>This helps us know what we're working towards</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts optInfo">
+              <div class="opt optRad toNextOpt optChoice" value="Very Dry">
+                <div class="opt-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/2_2.png?v=1657545537">
+                </div>
+                <div class="opt-text">
+                  <div class="text-opt">
+                    <h4>Very Dry</h4>
+                  </div>
+                  <div class="opt-info">
+                    <a href="#" class="info-lnk lnkInfo" data="1">
+                      <span class="info-icon"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/info.png?v=1632832751"></span>
+                      <span class="info-text">know more</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice" value="Balanced">
+                <div class="opt-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/3_2.png?v=1657545537">
+                </div>
+                <div class="opt-text">
+                  <div class="text-opt">
+                    <h4>Balanced</h4>
+                  </div>
+                  <div class="opt-info">
+                    <a href="#" class="info-lnk lnkInfo" data="2">
+                      <span class="info-icon"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/info.png?v=1632832751"></span>
+                      <span class="info-text">know more</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice" value="Oily">
+                <div class="opt-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/4_2.png?v=1657545537">
+                </div>
+                <div class="opt-text">
+                  <div class="text-opt">
+                    <h4>Oily</h4>
+                  </div>
+                  <div class="opt-info">
+                    <a href="#" class="info-lnk lnkInfo" data="3">
+                      <span class="info-icon"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/info.png?v=1632832751"></span>
+                      <span class="info-text">know more</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice" value="Combination">
+                <div class="opt-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/4_2.png?v=1657545537">
+                </div>
+                <div class="opt-text">
+                  <div class="text-opt">
+                    <h4>Combination</h4>
+                  </div>
+                  <div class="opt-info">
+                    <a href="#" class="info-lnk lnkInfo" data="4">
+                      <span class="info-icon"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/info.png?v=1632832751"></span>
+                      <span class="info-text">know more</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>We know oiliness and dryness levels can vary throughout the year, so just answer with what you're feeling at this exact moment.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep br_radius rounds_check anim-fade _choiceStep" data="6" index="6" key="How Sensitive is your skin?">
+          <div class="quiz-header">
+            <h2 class="head">How Sensitive is your skin?</h2>
+            <p>Let us know if your skin is easily irritated</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2">
+              <div class="opt toNextOpt optRad optChoice _show_desc" data-index="1" value="My skin is easily irritated" products="caffeine-eye-cream" desc="A common concern, dark circles can be caused by factors including a lack of sleep, diet and travelling. However, skincare products cannot help with genetic dark circles.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">My skin is easily irritated</div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice _show_desc" data-index="2" value="My skin is rarely irritated" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">My skin is rarely irritated</div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice _show_desc" data-index="3" value="I don’t try new products" products="caffeine-eye-cream" desc="Under-eye puffiness is often caused by water retention underneath the eye, as well as factors such as lack of sleep. However, skincare products cannot help with puffiness caused by fat deposits.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">I don’t try new products</div>
+              </div>
+            </div>
+          </div>
+
+         <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>Knowing your skin sensitivity helps us design your formulas that are gentle and non irritating.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep width_100 br_radius _choiceStep" data="7" index="7" key="Any new pimples in the last week?">
+          <div class="quiz-header">
+            <h2 class="head">Any new pimples in the last week?</h2>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts optInfo">
+              <div class="opt toNextOpt optRad optChoice" value="None">
+                <div class="opt-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/4445_1.png?v=1657793960">
+                </div>
+                <div class="opt-text">
+                  <div class="text-opt">
+                    <h4>None</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice" value="1-2">
+                <div class="opt-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/4445_2.png?v=1657793960">
+                </div>
+                <div class="opt-text">
+                  <div class="text-opt">
+                    <h4>1-2</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice" value="3-4">
+                <div class="opt-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/4445_3.png?v=1657793960">
+                </div>
+                <div class="opt-text">
+                  <div class="text-opt">
+                    <h4>3-4</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice" value="5-6">
+                <div class="opt-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/4445_4.png?v=1657793960">
+                </div>
+                <div class="opt-text">
+                  <div class="text-opt">
+                    <h4>5-6</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>This number gives us clues about patterns in your skin. We’ll use this info to give you extra support at any stage.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep br_radius rounds_check anim-fade _choiceStep" data="8" index="8" key="Do you wear Sunscreen?">
+          <div class="quiz-header">
+            <h2 class="head">Do you wear Sunscreen?</h2>
+            <p>This helps us understand your routine.</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2">
+              <div class="opt toNextOpt optRad optChoice _show_desc" data-index="1" value="Yes" products="caffeine-eye-cream" desc="A common concern, dark circles can be caused by factors including a lack of sleep, diet and travelling. However, skincare products cannot help with genetic dark circles.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Yes</div>
+              </div>
+              <div class="opt toNextOpt optRad optChoice _show_desc" data-index="2" value="No" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">No</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="quiz-step inputStep br_radius s_check anim-fade _choiceStep" data="9" index="9" key="What products do you use?">
+          <div class="quiz-header">
+            <h2 class="head">What products do you use?</h2>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2 opt-text-p">
+              <div class="opt optChk optRad toNextOpt optChoice _show_desc" data-index="1" value="Cleanser" products="caffeine-eye-cream" desc="A common concern, dark circles can be caused by factors including a lack of sleep, diet and travelling. However, skincare products cannot help with genetic dark circles.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Cleanser</div>
+              </div>
+              <div class="opt optChk optRad toNextOpt optChoice _show_desc" data-index="2" value="Moisturizer" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Moisturizer</div>
+              </div>
+              <div class="opt optChk optRad toNextOpt optChoice _show_desc" data-index="2" value="Toner" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Toner</div>
+              </div>
+              <div class="opt optChk optRad toNextOpt optChoice _show_desc" data-index="2" value="Chemical exfoliator" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Chemical exfoliator</div>
+              </div>
+              <div class="opt optChk optRad toNextOpt optChoice _show_desc" data-index="2" value="Serum" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Sunscreen</div>
+              </div>
+              <div class="opt optChk optRad toNextOpt optChoice _show_desc" data-index="2" value="Serum" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Serum</div>
+              </div>
+            </div>
+          </div>
+
+         <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>This helps us know more about you and what your skin goes through. Share multiple—your formulator will pick active ingredients for your unique needs.
+(Select all that apply)</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep br_radius quiz-next-provide rounds_check anim-fade _choiceStep yes_no_val" data="10" index="10" key="Do you have any allergies?">
+          <div class="quiz-header">
+            <h2 class="head">Do you have any allergies?</h2>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2 j_box hg-height j_contain">
+              <div class="opt optRad yesvalue optChoice _show_desc" data-index="1" value="Yes" products="caffeine-eye-cream" desc="A common concern, dark circles can be caused by factors including a lack of sleep, diet and travelling. However, skincare products cannot help with genetic dark circles.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Yes</div>
+              </div>
+              <div class="opt toNextOpt novalue optRad optChoice _show_desc" data-index="2" value="No" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">No</div>
+              </div>
+              <div class="provide_details">
+                <div class="opt-text">Please provide details</div>
+                <div class="text_box_error">Please fill the details </div>
+                <textarea class="text_box" name="provide_details" rows="4" cols="50"></textarea>
+              </div>
+            </div>
+          </div>
+
+         <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>We'll avoid using any ingredients that you might be allergic to.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep br_radius quiz-next-provide rounds_check anim-fade _choiceStep yes_no_val" data="11" index="11" key="Any medical conditions or surgeries?">
+          <div class="quiz-header">
+            <h2 class="head">Any medical conditions or surgeries?</h2>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2 j_box j_contain">
+              <div class="opt optRad yesvalue optChoice _show_desc" data-index="1" value="Yes" products="caffeine-eye-cream" desc="A common concern, dark circles can be caused by factors including a lack of sleep, diet and travelling. However, skincare products cannot help with genetic dark circles.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Yes</div>
+              </div>
+              <div class="opt toNextOpt optRad novalue optChoice _show_desc" data-index="2" value="No" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">No</div>
+              </div>
+              <div class="provide_details">
+                <div class="opt-text">Please provide details</div>
+                <div class="text_box_error">Please fill the details </div>
+                <textarea class="text_box" name="provide_details" rows="4" cols="50"></textarea>
+              </div>
+            </div>
+          </div>
+
+         <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>Medical conditions can impact your skin and the ingredients we pick for you.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="quiz-step inputstepbtn inputStep br_radius rounds_check formula_section anim-fade _choiceStep inputFilled" data="12" index="12" key="Name Your Formula">
+          <div class="quiz-header">
+            <h2 class="head">Name Your Formula</h2>
+            <p>(To be printed on bottles)</p>
+          </div>
+          <div class='quiz-b-input'>
+            <div class="formula_box_error">Please fill name </div>
+            <input type='text' maxlength="10" placeholder='ONLY UPTO 10 CHARACTERS' class='input_formula'>
+              <p class='quiz-b-text'>*Only 10 Characters</p>
+          </div>
+         {% comment %} 
+         <div class="quiz-body">
+            <div class="quiz-opts _opts2">
+              <h2 class="head">Fragrance</h2>
+              <div class="opt optRad optChoice _show_desc active" data-index="1" value="Fragarance free">
+                <div class="opt-text">FRAGRANCE-FREE <label class='formula-label'>Recommended</label> <p class='formula-margin'>ideal for sensitive skin to reduce irritation</p> </div>
+              </div>
+                 </div>
+          </div>
+          {% endcomment %}
+         {% comment %} 
+
+          <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">Are Fragrances Safe?</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>All our fragrances are IFRA comliant and completely safe to use. Incase you have sensitive skin, we recommend you to with fragrance free</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+                     {% endcomment %}
+
+        </div>
+        
+        <div class="quiz-step inputStep br_radius quiz-next-provide hg-height rounds_check anim-fade _choiceStep yes_no_val" data="13" index="13" key="Anything else you’d like to share?">
+          <div class="quiz-header">
+            <h2 class="head">Anything else you’d like to share?</h2>
+            <p>Specific requests? We’re all ears.</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts yesvalue _opts2 j_box j_contain">
+              <div class="opt optRad optChoice _show_desc" data-index="1" value="Yes" products="caffeine-eye-cream" desc="A common concern, dark circles can be caused by factors including a lack of sleep, diet and travelling. However, skincare products cannot help with genetic dark circles.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Yes</div>
+              </div>
+              <div class="opt toNextOpt optRad novalue optChoice _show_desc" data-index="2" value="No" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">No</div>
+              </div>
+              <div class="provide_details">
+                <div class="opt-text">Please provide details</div>
+                <textarea class="text_box" name="provide_details" rows="4" cols="50"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep br_radius quiz-next-provide hg-height rounds_check anim-fade _choiceStep yes_no_val" data="14" index="14" key="Are you taking any prescription or medications?">
+          <div class="quiz-header">
+            <h2 class="head">Are you taking any prescription or medications?</h2>
+            <p>This includes birth control (any type), topical medications, and supplements</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-opts _opts2 j_box j_contain">
+              <div class="opt optRad yesvalue optChoice _show_desc" data-index="1" value="Yes" products="caffeine-eye-cream" desc="A common concern, dark circles can be caused by factors including a lack of sleep, diet and travelling. However, skincare products cannot help with genetic dark circles.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">Yes</div>
+              </div>
+              <div class="opt toNextOpt novalue optRad optChoice _show_desc" data-index="2" value="No" products="caffeine-eye-cream" desc="Often the first signs of ageing, fine lines and wrinkles will appear in the creases of the eye area.">
+                <div class="opt-icon">
+                  <span class="icon-check"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/tick.png?v=1632824026"></span>
+                </div>
+                <div class="opt-text">No</div>
+              </div>
+              <div class="provide_details">
+                <div class="opt-text">Please provide details</div>
+                <textarea class="text_box" name="provide_details" rows="4" cols="50"></textarea>
+              </div>
+            </div>
+          </div>
+         <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>Your hormones play a huge part in your skin. The medications you are on gives us an idea on what your skin must be going through so that we can tweak the formulas accordingly. </p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-step inputStep hight_unset auto_form_submit next_btn_show custom_klaviyoFrom" data="15" index="15" key="Email">
+          <div class="quiz-header">
+            <h2 class="head">Where should we send your results?</h2>
+            <p>We’ll use this to personalize your routine</p>
+          </div>
+          <div class="quiz-body">
+            
+            {% # cd code %}
+            <div class="input-wrap">
+              <input type="hidden" class="kalviyo_name_input" name="">
+              <div id="omnisend-embedded-v2-6454d8ba1c89404ab50e3e61"></div>
+            </div>
+            
+            {% comment %}<div class="input-wrap">
+              <div class="input-group inputGroup input-with-icon">
+                <span class="email-icon"><img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/image.png?v=1657601833"></span>
+                <input type="text" placeholder="First Name" class="inputField js_input_error first-name-value inputVal">
+              </div>
+            </div>
+            <div class="input-wrap">
+              <div class="input-group inputGroup input-with-icon">
+                <span class="email-icon"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/email.png?v=1632837051"></span>
+                <input type="email" placeholder="Email address" class="inputField js_input_error email-name-value inputVal">
+              </div>
+            </div>{% endcomment %}
+            
+            <div class="email_box_error hide">Please fill all the details properly</div>
+
+      {% comment %}      <div class='skip_btn js_skip_btn'>Skip</div> {% endcomment %}
+          </div>
+       </div>
+        
+      <div class="quiz-step slide-auto" data="16">
+          {% comment %}
+          <div class="quiz-body">
+            <h2>GOTCHA!</h2>
+            <p>PERSONALIZING YOUR FORMULAS</p>
+          </div> 
+         {% endcomment %}
+        <div class="selection-loader">
+          <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/PERSONALIZING_YOUR_PRODUCTS.......gif?v=1642670511">
+        </div>
+        </div>
+                
+     {% comment %} <div class="quiz-step inputStep bg_color btn_unable ingrdnts_slide fix-width" data="17" index="17"> {% endcomment %}
+      {% comment %}
+        <div class="quiz-step inputStep bg_color btn_unable ingrdnts_slide" data="17" index="17">
+          <div class="quiz-header m_btm">
+            <div class="quiz-header-color">
+            <h3 class='f-weight'>Each product is custom formulated with ingredients tailored to your needs.</h3>
+            <p>All custom skincare products are free of parabens, mineral oils, gluten, sulfates, dyes, GMOs, and animal cruelty.</p>
+            </div>
+           </div>
+          <h2 class='f-weight add-name'>PRODUCTS INCLUDE:</h2>              
+          <div class="quiz-body grid_container incl_ingredients"></div>
+        </div>
+{% endcomment %}
+    <div class="quiz-step inputStep custom-selection add_header fix-width hight_unset" data="17" index="17" key="product page">
+       
+        <div class="selection-content  product_section_name" id='nav_details_section'>
+            <h3 id="select-pro" class="select-pro">Here’s your customized skincare routine!</h3>
+            <p class="select-p">Based on your quiz results, our chemists will create a complete regimen for your specific skin type and goals.</p>
+            {%- assign collection = collections['skincare'] -%}
+        
+            <script type="application/json" id="productImgJSON">
+                {
+                {%- for product in collection.products -%}
+                "{{ product.handle }}": {
+                {%- for image in product.images -%}
+                "{{ image.alt }}": "{{ image | img_url: 'compact' }}"{%- unless forloop.last -%},{%- endunless -%}
+                {%- endfor -%}
+                }{%- unless forloop.last -%},{%- endunless -%}
+                {%- endfor -%}
+                }
+          </script>
+
+        <div class="selection-products">
+            <div class="products-inner">
+               
+                {%- for product in collection.products -%}
+                {%- unless product.available -%}{%- continue -%}{%- endunless -%}
+                  
+     
+                  
+                {%- comment -%}{%- if forloop.index == 2 -%}<div class="selection-products-group">{%- endif -%}
+                    {%- assign current_variant = product.variants[1] | default: product.selected_or_first_available_variant -%}{%- endcomment -%}
+                    {%- assign current_variant = product.selected_or_first_available_variant -%}
+                    <div class="selection-product r_pb selection_prdct jsSelectProduct" data="{{ product.handle }}">
+                    
+                        {% if product.tags contains 'best-selling-product' %}
+                        <a href="#" class="txt-add-up bst-seller bg_red">Best Selling</a>
+                        {% endif %}
+                        {% if product.tags contains 'Super-saver' %}
+                        <a href="#" class="txt-add-up bst-seller bg_blue">Recommended for you</a>
+                        {% endif %}
+                        <div class="sel-pr-row1 pr-row">{%- comment -%}CD*{%- endcomment -%}
+                            {%- if product.featured_image -%}
+                            <div class="sel-pr-img sel-img-w">
+                                <a href="#">
+                                    <img src="{{ product.featured_image | img_url: 'master' }}">
+                                </a>
+                              
+                              {% if product.metafields.custom.review_text != blank %}
+                                  <div class='quiz_reviews_product'>★ ★ ★ ★ ★ <span class='meta_review_text'> {{ product.metafields.custom.review_text }} </span> </div>
+                              {% endif %}
+                              
+                              {% if product.metafields.custom.short_text != blank %}
+                               <p class="short_text_meta">{{ product.metafields.custom.short_text }}</p>
+                            {% endif %}
+                            </div>
+                            {%- endif -%}
+                            <div class="sel-pr-details sel-img-w">
+                                <a href="{{ product.url }}">
+                                    <h4 class="sel-pr-title txt-popup-open">{{ product.title }}</h4>
+                                </a>
+                           {% comment %}     {%- for tag in product.tags -%}
+                                {%- if tag contains 'ml_' -%}
+                                <p class="sel-pr-opt">{{ tag | replace: 'ml_','' }}</p>
+                                {%- break -%}
+                                {%- endif -%}
+                                {%- if tag contains 'ml1_' -%}
+                                <p class="sel-pr-opt">{{ tag | replace: 'ml1_','Cover for shipping and handling' }}</p>
+                                {%- break -%}
+                                {%- endif -%}
+                                {%- endfor -%}
+                          {% endcomment %}
+                            </div>
+                        {% if product.metafields.custom.see_ingredients_and_more != blank %}
+                           <p class="short_text_meta txt-popup txt-popup-open f-size" data-id='product-{{ product.id }}'> See ingredients and more</p>
+                        {% endif %}
+                        </div>
+                        {%- if product.description != blank -%}
+                        <div class="sel-pr-row2">
+                            <p>{{ product.description | strip_html | truncate: 85 }}</p>
+                        </div>
+                        {%- endif -%}
+                        <div class="sel-pr-row3">
+                            {%- unless product.has_only_default_variant -%}
+                            <div class="variant-picker var_picker">
+                                <div class="variant-toggle var_toggle variant-t-margin">
+                                    <span class="label">Your plan:</span>
+                                    <span class="value var_name">{{ current_variant.title }}</span>
+                                    <span class="action"><span class="txt">Select Plan</span><span class="arrow">{%- render
+                                            'icon-down-arrow' -%}</span></span>
+                                    <span class="discount-text di-text-up"><span>Save upto 40% with longer plans</span></span>
+                                </div>
+                                <div class="variant-list">
+                                    <div class="list-header">
+                                        <div class="text">
+                                            <h3>Choose your plan</h3>
+                                            <p>We recommend to use the product for atleast 7-8 weeks to notice significant
+                                                difference</p>
+                                        </div>
+                                        <button class="btn-close btn_close_var"><span class="close-icon">{%- render 'icon-close'
+                                                -%}</span></button>
+                                    </div>
+                                    <div class="list-body">
+                                        {%- for variant in product.variants -%}
+                                    <div class="list-row{% if variant == current_variant %} active{% endif %} var_opt"
+                                            data="{{ variant.id }}">
+                                           {%- if forloop.first -%}<div class="border-text"><span>Most Popular</span></div>{%-
+                                            endif -%} 
+                                       {% comment %} <div class="list-row{% if forloop.index == 2 or product.variants.size == 1 %} active{% endif %} var_opt"
+                                            data="{{ variant.id }}">
+                                            {%- if forloop.index == 2 or product.variants.size == 1 -%}<div class="border-text"><span>Most Popular</span></div>{%-
+                                            endif -%}{% endcomment %}
+                                            <div class="list-variant">
+                                                <span class="var-radio">
+                                                    <span class="radio"><span class="radio-i"></span></span>
+                                                </span>
+                                                <span class="var-title">{{ variant.title }}</span>
+                                                {%- assign variant_price = variant.price | divided_by: forloop.index -%}
+                                                <span class="var-pricing">
+                                                    {%- if variant.compare_at_price > variant.price -%}
+                                                    <span class="compare-at-price"
+                                                        data-compare-price="{{ variant.compare_at_price }}">{{
+                                                        variant.compare_at_price | money }}</span>
+                                                    {%- endif -%}
+                                                    <span class="price-wrap">
+                                                        <span class="price" data-price="{{ variant.price }}">{{ variant_price |
+                                                            money }}</span>
+                                                        <span class="subtext">per set</span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            {%- if variant.compare_at_price > variant.price -%}
+                                            <span class="var-discount">Save {{ variant.compare_at_price | minus: variant.price |
+                                                times: 100.0 | divided_by: variant.compare_at_price | money_without_currency |
+                                                times: 100 | remove: '.0'}}%</span>
+                                            {%- endif -%}
+                                        </div>
+                                        {%- endfor -%}
+                                    </div>
+                                </div>
+                            </div>
+                            {%- endunless -%}
+        
+                            <div class="sel-pr-prices">
+        
+                                <div class="pricing-row">
+                                  {% comment %}  <label>Total:</label> {% endcomment %}
+        
+                                    <div class="custom-pricing custom-p">
+                                        <span class="sel-pr-c-price prod_c_price{% unless current_variant.compare_at_price > current_variant.price %} hide{% endunless %}">{{ current_variant.compare_at_price | money_without_currency | remove: '.00' }}/-</span>
+                                        <span class="sel-pr-price prod_price">{{ current_variant.price | money_without_currency | remove: '.00'}}/-</span>
+                                    </div>
+                                </div>
+        
+                                <div
+                                    class="save-price prod_save_percent{% unless current_variant.compare_at_price > current_variant.price %} hide{% endunless %}">
+                                    <span class="money_sale_percent add-margin">Save {{ current_variant.compare_at_price | minus:
+                                        current_variant.price | money_without_currency | remove: '.00'}}/-</span>
+                                </div>
+        
+                            </div>
+        
+        
+                            {%- comment -%}
+                            {% if product.tags contains 'free-ship' %}
+                            <div class="free-ship">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g transform="translate(1 1)">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M186.733,391.533c-9.387,0-17.067,7.68-17.067,17.067s7.68,17.067,17.067,17.067s17.067-7.68,17.067-17.067 S196.12,391.533,186.733,391.533z" />
+                                                <path
+                                                    d="M408.6,391.533c-9.387,0-17.067,7.68-17.067,17.067s7.68,17.067,17.067,17.067s17.067-7.68,17.067-17.067 S417.987,391.533,408.6,391.533z" />
+                                                <path
+                                                    d="M383,331.8h-17.067c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533H383c5.12,0,8.533-3.413,8.533-8.533 S388.12,331.8,383,331.8z" />
+                                                <path
+                                                    d="M255,246.467H135.533c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533H255c5.12,0,8.533-3.413,8.533-8.533 S260.12,246.467,255,246.467z" />
+                                                <path
+                                                    d="M139.8,102.253c-4.267-2.56-9.387-1.707-11.947,2.56L82.627,173.08l-26.453-26.453c-3.413-3.413-8.533-3.413-11.947,0 s-3.413,8.533,0,11.947l34.133,34.133c1.707,1.707,3.413,2.56,5.973,2.56c3.413,0,5.973-1.707,6.827-4.267l51.2-76.8 C144.92,109.933,144.067,104.813,139.8,102.253z" />
+                                                <path
+                                                    d="M499.907,313.88l-33.28-13.653l-21.333-85.333c-2.56-11.947-12.8-19.627-24.747-19.627h-80.213v-25.6 c0-9.387-7.68-17.067-17.067-17.067H186.348c0.25-2.81,0.385-5.655,0.385-8.533c0-52.053-41.813-93.867-93.867-93.867 C40.813,50.2-1,92.013-1,144.067c0,49.175,37.319,89.204,85.333,93.481v60.119v102.4c0,9.387,7.68,17.067,17.067,17.067h34.863 c4.095,24.134,25.217,42.667,50.47,42.667s46.375-18.533,50.47-42.667H358.13c4.095,24.134,25.217,42.667,50.47,42.667 c25.253,0,46.375-18.533,50.47-42.667h34.863c9.387,0,17.067-7.68,17.067-17.067v-69.973 C511,322.413,506.733,316.44,499.907,313.88z M323.267,203.8v8.533c0,42.667-34.133,76.8-76.8,76.8H101.4v-51.2 c7.334-0.815,14.48-2.445,21.316-4.802c13.123-4.362,24.935-11.528,34.735-20.798h114.616c5.12,0,8.533-3.413,8.533-8.533 s-3.413-8.533-8.533-8.533H171.794c5.064-7.748,8.999-16.334,11.526-25.6h139.947V203.8z M16.067,144.067 c0-42.667,34.133-76.8,76.8-76.8c42.667,0,76.8,34.133,76.8,76.8c0,4.703-0.438,9.294-1.233,13.756 c-0.199,0.504-0.361,1.038-0.474,1.604c-1.825,9.581-5.432,18.419-10.419,26.243c-0.283,0.442-0.555,0.891-0.847,1.326 c-0.153,0.229-0.317,0.45-0.472,0.678c-0.538,0.783-1.082,1.562-1.648,2.323c-0.112,0.151-0.229,0.299-0.343,0.449 c-0.619,0.821-1.251,1.631-1.902,2.425c-0.105,0.129-0.213,0.256-0.32,0.384c-0.666,0.802-1.348,1.591-2.046,2.364 c-0.11,0.122-0.221,0.244-0.333,0.366c-0.022,0.024-0.045,0.046-0.066,0.07c-1.769,0.79-3.112,2.145-3.887,3.926 c-0.278,0.262-0.548,0.533-0.83,0.791c-0.114,0.104-0.225,0.212-0.339,0.315c-0.821,0.743-1.66,1.467-2.513,2.174 c-0.07,0.057-0.136,0.118-0.206,0.175c-0.909,0.748-1.837,1.475-2.781,2.181c-0.333,0.248-0.676,0.482-1.013,0.725 c-0.57,0.412-1.141,0.825-1.723,1.222c-0.57,0.387-1.151,0.759-1.732,1.131c-0.355,0.228-0.708,0.459-1.067,0.682 c-0.668,0.413-1.345,0.812-2.026,1.204c-0.272,0.157-0.544,0.314-0.818,0.468c-0.747,0.418-1.501,0.825-2.263,1.219 c-0.198,0.103-0.397,0.203-0.597,0.304c-0.833,0.421-1.673,0.832-2.523,1.224c-0.087,0.04-0.175,0.078-0.262,0.118 c-4.708,2.147-9.666,3.826-14.806,4.999c-0.274,0.062-0.547,0.129-0.823,0.188c-0.77,0.167-1.547,0.316-2.325,0.46 c-0.43,0.079-0.861,0.157-1.293,0.229c-0.689,0.115-1.38,0.221-2.074,0.318c-0.557,0.077-1.117,0.146-1.678,0.211 c-0.606,0.071-1.212,0.142-1.822,0.199c-0.72,0.067-1.445,0.116-2.17,0.163c-0.477,0.031-0.952,0.071-1.432,0.094 c-1.225,0.057-2.456,0.092-3.696,0.092C50.2,220.867,16.067,186.733,16.067,144.067z M186.733,442.733 c-18.773,0-34.133-15.36-34.133-34.133c0-18.773,15.36-34.133,34.133-34.133c18.773,0,34.133,15.36,34.133,34.133 C220.867,427.373,205.507,442.733,186.733,442.733z M408.6,442.733c-18.773,0-34.133-15.36-34.133-34.133 c0-18.773,15.36-34.133,34.133-34.133c18.773,0,34.133,15.36,34.133,34.133C442.733,427.373,427.373,442.733,408.6,442.733z M493.933,400.067H459.07c-2.881-16.98-14.192-31.177-29.444-38.106c-0.338-0.155-0.674-0.314-1.017-0.462 c-0.214-0.092-0.432-0.175-0.648-0.264c-0.553-0.229-1.109-0.453-1.672-0.662c-0.152-0.056-0.306-0.108-0.459-0.163 c-0.625-0.226-1.256-0.442-1.893-0.644c-0.138-0.044-0.276-0.085-0.415-0.127c-0.648-0.199-1.302-0.387-1.962-0.56 c-0.146-0.038-0.292-0.076-0.439-0.113c-0.648-0.164-1.301-0.316-1.96-0.455c-0.166-0.035-0.331-0.071-0.497-0.104 c-0.636-0.128-1.277-0.242-1.922-0.346c-0.191-0.031-0.381-0.064-0.573-0.093c-0.621-0.093-1.248-0.17-1.877-0.24 c-0.213-0.024-0.425-0.052-0.639-0.074c-0.629-0.062-1.263-0.107-1.899-0.146c-0.21-0.013-0.417-0.033-0.628-0.043 c-0.837-0.041-1.68-0.065-2.529-0.065c-0.849,0-1.692,0.024-2.529,0.065c-0.21,0.01-0.418,0.03-0.628,0.043 c-0.636,0.039-1.27,0.084-1.899,0.146c-0.214,0.021-0.426,0.05-0.639,0.074c-0.629,0.07-1.256,0.148-1.877,0.24 c-0.192,0.029-0.382,0.062-0.574,0.093c-0.645,0.104-1.285,0.218-1.921,0.345c-0.167,0.034-0.332,0.069-0.498,0.104 c-0.658,0.139-1.311,0.291-1.959,0.455c-0.146,0.037-0.293,0.074-0.439,0.113c-0.66,0.174-1.314,0.361-1.962,0.561 c-0.138,0.042-0.276,0.083-0.414,0.127c-0.638,0.202-1.268,0.418-1.894,0.644c-0.152,0.055-0.305,0.107-0.457,0.163 c-0.564,0.21-1.121,0.434-1.675,0.664c-0.215,0.089-0.432,0.172-0.645,0.263c-0.343,0.148-0.68,0.308-1.019,0.463 c-15.25,6.93-26.561,21.126-29.441,38.105H237.203c-2.881-16.979-14.19-31.174-29.439-38.104 c-0.34-0.156-0.677-0.316-1.021-0.464c-0.213-0.091-0.43-0.174-0.645-0.263c-0.554-0.229-1.111-0.453-1.675-0.664 c-0.151-0.056-0.305-0.108-0.457-0.163c-0.626-0.226-1.257-0.442-1.894-0.644c-0.137-0.043-0.276-0.084-0.414-0.127 c-0.648-0.199-1.302-0.387-1.962-0.561c-0.146-0.038-0.292-0.076-0.439-0.113c-0.648-0.164-1.301-0.316-1.96-0.455 c-0.166-0.035-0.331-0.071-0.497-0.104c-0.636-0.128-1.277-0.242-1.922-0.346c-0.191-0.031-0.381-0.064-0.573-0.093 c-0.621-0.093-1.248-0.17-1.877-0.24c-0.213-0.024-0.425-0.052-0.639-0.074c-0.629-0.062-1.263-0.107-1.899-0.146 c-0.21-0.013-0.417-0.033-0.628-0.043c-0.837-0.041-1.68-0.065-2.529-0.065c-0.849,0-1.692,0.024-2.529,0.065 c-0.21,0.01-0.418,0.03-0.628,0.043c-0.636,0.039-1.27,0.084-1.899,0.146c-0.214,0.021-0.426,0.05-0.639,0.074 c-0.629,0.07-1.256,0.148-1.877,0.24c-0.192,0.029-0.382,0.062-0.573,0.093c-0.645,0.104-1.286,0.218-1.922,0.346 c-0.166,0.033-0.332,0.069-0.497,0.104c-0.659,0.139-1.312,0.291-1.96,0.455c-0.146,0.037-0.293,0.074-0.439,0.113 c-0.66,0.174-1.313,0.361-1.962,0.56c-0.138,0.042-0.277,0.083-0.415,0.127c-0.637,0.202-1.267,0.418-1.893,0.644 c-0.153,0.055-0.307,0.107-0.459,0.163c-0.563,0.21-1.119,0.433-1.672,0.662c-0.216,0.089-0.434,0.172-0.648,0.264 c-0.342,0.148-0.678,0.307-1.017,0.462c-15.252,6.929-26.563,21.126-29.444,38.106H101.4V306.2h145.067 c52.053,0,93.867-41.813,93.867-93.867h80.213c4.267,0,7.68,3.413,8.533,6.827l19.44,78.507h-62.96 c-5.973,0-11.093-5.12-11.093-11.093v-40.107c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533v40.107 c0,15.36,12.8,28.16,28.16,28.16h70.827l37.547,14.507V400.067z" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="free-text-ship">FREE SHIPPING</span>
+                            </div>
+                            {% endif %}
+                            {%- endcomment -%}
+                            <div class="sel-pr-btn sel-p-btn">
+                                <button class="jsBtnAdd skin-care btn_add_js sel{{ current_variant.id }} _data_id"
+                                    data-id="{{ current_variant.id }}">
+                                    <span class="txt-right" style="width: 10%;">✓</span>
+                                    <span data="{{ current_variant.id }}"
+                                        class="txt-add-up txt-add-js add-remove _data add{{ current_variant.id }}">Add to cart</span>
+                                  {%- comment -%}  <span class="txt-added remove{{ current_variant.id }} _data" style="width: 30%;"
+                                        data="{{ current_variant.id }}">
+                                      <span data="{{ current_variant.id }}"
+                                            class="txt-remove _data">remove</span></span>{%- endcomment -%}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    {%- comment -%}{%- if forloop.index == 3 -%}
+                </div>{%- endif -%}{%- endcomment -%}
+                {%- endfor -%}
+      </div>
+                <style>
+        
+                </style>
+         
+                    
+           {% comment %}     <div class="gridsticky">
+                    <div class="col-1-2">
+                        <div class="ripple-container ">
+        
+                            <input type="hidden" class="selected_ids" />
+                            <a href="#select-pro" class="btn anchortoaddpro">Add Product</a>
+                            <a href="#" class="btn btnBuy hide">
+                                <span class="txt-adding">Adding..</span>
+                                <span class="txt-buy">Buy</span>
+                            </a>
+                            <div class="ripple"></div>
+                        </div>
+                    </div>
+                </div>
+{% endcomment %} 
+                <div class="sub-quiz subQuiz">
+                  {%- include 'sub-quiz' -%}
+                </div>
+        
+            </div>
+        </div>
+
+     {% comment %}   <div class='pro_video product_section_name' id='nav_video_section'>
+          <div class='container'>
+          <div class="promo-video-section">
+          
+              <div class="inner-video-section">
+            <video width="100%" controls="">
+              <source src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/10000000_246326903921914_3076759463712508381_n.mp4?v=1642624313#t=0.5" type="video/mp4">
+            </video>
+            <div class="video-content">
+              <div class="content-img">
+                <img src="https://www.asimhy.com/wp-content/themes/scroller/functions/images/bg.jpg" class="profile-img"></div><div class="rev-add-details"> <span class="promoter-name">Sana</span> <span class="med-star"><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></span></div>
+            </div>
+              <p>"I can't thank this product enough for the results!!"</p>
+          </div>
+          
+           <div class="inner-video-section">
+            <video width="100%" controls="">
+              <source src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Hitakshi.mp4?v=1629455864#t=0.5" type="video/mp4">
+            </video>
+            <div class="video-content">
+              <div class="content-img">
+                <img src="https://www.asimhy.com/wp-content/themes/scroller/functions/images/bg.jpg" class="profile-img"></div><div class="rev-add-details"> <span class="promoter-name">Hitakshi</span> <span class="med-star"><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></span></div>
+            </div>
+              <p>"This is the absolute best out there"</p>
+          </div>
+              
+          
+          <div class="inner-video-section">
+            <video width="100%" controls="">
+              <source src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/10000000_434474244254606_9036717175572115826_n.mp4?v=1610620530#t=0.5" type="video/mp4">
+            </video>
+            <div class="video-content">
+              <div class="content-img">
+                <img src="https://www.asimhy.com/wp-content/themes/scroller/functions/images/bg.jpg" class="profile-img"></div><div class="rev-add-details"> <span class="promoter-name">Charine Sethi</span> <span class="med-star"><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></span></div>
+            </div>
+              <p>"Ravel has helped my hair to repair damage and get healthy and happy"</p>
+          </div>
+          
+          <div class="inner-video-section">
+            <video width="100%" controls="">
+              <source src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/194709B83B7370960ED9E038AC66C8B2_video_dashinit.mp4?v=1642671337#t=0.5" type="video/mp4">
+            </video>
+            <div class="video-content">
+              <div class="content-img">
+                <img src="https://www.asimhy.com/wp-content/themes/scroller/functions/images/bg.jpg" class="profile-img"></div><div class="rev-add-details"> <span class="promoter-name">Sakshi</span> <span class="med-star"><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></span></div>
+            </div>
+              <p>"Permanent solution for my curly hair"</p>
+          </div>
+          
+        </div>
+          </div>
+        </div>
+        {% endcomment %}
+
+        <div class='high_performing_section'>
+          <div class='container'>
+            <div class='high-performing-s-heading'>
+              <h3 class='high-performing-letter'>your one-in-three billion formula never contains...</h3>
+            </div>
+            <div class='high-performing-s-words high-performing-margin'>
+              <span>oxybenzone</span>
+              <span>titanium dioxide</span>
+              <span>parabens</span>
+              <span>formaldehyde</span>
+              <span>phenol</span>
+              <span>sulfates</span>
+              <span>petroleum</span>
+              <span>drying alcohols</span>
+              <span>phthalates</span>
+            </div>
+            <div class='high-performing-s-container'>
+              <h4 class='high-performing-letter high-performing-upper'>High-performing, personalized formulas</h4>
+              <div class='high-performing-s-c-image high-performing-margin'>
+               <a href='#' class='high-performing-s-c-i-img'><img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/image-removebg-preview_4.png?v=1658831827' class='high-performing-s-c-i-i-i'></a>
+               <a href='#' class='high-performing-s-c-i-img'><img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/image-removebg-preview_5.png?v=1658831827' class='high-performing-s-c-i-i-i'></a>
+               <a href='#' class='high-performing-s-c-i-img'><img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/image-removebg-preview_3.png?v=1658831828' class='high-performing-s-c-i-i-i'></a>
+               <a href='#' class='high-performing-s-c-i-img'><img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/image-removebg-preview_1.png?v=1658831827' class='high-performing-s-c-i-i-i'></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <div class='pro_image-with_text2 product_section_name' id='nav_results_section'>
+          <div class='container'>
+            <div class='section_wrapper'>
+        <div class="product-detail-heading medium-up-hide">
+        <p class="eyebrow color-label">Results</p>
+        <div class="h2">Unretouched Real Results</div>
+      </div>
+      <div class="slide_img">
+     {% comment %}   <button class="slider_arrows prev_arrow"></button>
+        <button class="slider_arrows next_arrow"></button>
+        {% endcomment %}
+        <div class="slider_items js_section_image_slide">
+          <div class="slider_item_image">
+            <div class="image">
+              <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Before.png?v=1663075086">
+            </div>
+          </div>
+          <div class="slider_item_image">
+            <div class="image">
+              <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/face_1.png?v=1663075085">
+            </div>
+          </div>
+          <div class="slider_item_image">
+            <div class="image">
+              <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Before.png?v=1663075086">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_info">
+        <p class="product-detail-list--heading label">Test panelists agree in just 14 days:</p>
+        <hr class='margin-hr'>
+        <ul class="product-detail-list">
+          <li><span>84% showed a reduction in the look of dark spots</span></li>
+          <li><span>91% saw brighter skin</span></li>
+          <li><span>94% noticed smoother skin</span></li>
+          <li><span>89% reported a more radiant glow</span></li>
+        </ul>
+      </div>
+
+      </div>
+      </div>
+      </div>
+
+<div class='review-section-default'>
+  <div class='review-container'>
+    <h2 class='review-h'>Reviews Heighlights:</h2>
+    <div class='container'>
+      <div class='review-c-box'>
+         <h2 class='review-d-star'>★★★★★</h2>
+        <h4 class='r-b-heading'>Saw wonderful changes.</h4>
+        <p class='r-b-para'>Ravel's skincare line improved my skin significantly. It's smoother, brighter, and has an even tone. The process was easy and the customer service was great. I'll definitely repurchase and recommend Ravel.</p>
+      </div>
+       <div class='review-c-box'>
+         <h2 class='review-d-star'>★★★★★</h2>
+        <h4 class='r-b-heading'>The best I've ever used.</h4>
+        <p class='r-b-para'>Ravel's customized routine works well for my sensitive skin. Redness decreased and my skin feels hydrated and healthy. I'm extremely impressed with the results</p>
+      </div>
+       <div class='review-c-box'>
+         <h2 class='review-d-star'>★★★★★</h2>
+        <h4 class='r-b-heading'>So far too good.</h4>
+        <p class='r-b-para'>If you understand your skin and give the right answer and goals, the product works great. i love that it's fragrance free and texture of the product too.</p>
+      </div>
+    </div>
+    <div class='review-default-btn'><a class="review-d-button" href="#rev-sec">See More reviews</a></div>
+  </div>
+</div>
+
+      
+      <div class='review-default'>
+        <div class='r-container'>
+          <h2 class='review-d-star'>★★★★★</h2>
+          <div class='review-contents'>
+              <div class='review-count'>
+                  <h1 class='review-c-count'>2,136+</h1>
+              </div>
+              <div class='review-count-content'>
+                <p class='review-count-content-p'>people have achieved their Skin Goals with Ravel.</p>
+              </div>
+          </div>
+        </div>
+          <div class='review-quiz-body'>
+            <div class="review_box_container">
+              <div class='review_quiz-opts review_box'>
+                <div class='review_box_content'>
+                  <div class='review_box_3'>
+                    <div class="review-box-content-opt" data-index="1" value="Anti Aging">
+                       <div class="opt-texts">Reduced Acne</div>
+                    </div>
+                    <div class="review-box-content-opt" data-index="2" value="Anti Aging">
+                       <div class="opt-texts">Anti Ageing</div>
+                    </div>
+                    <div class="review-box-content-opt" data-index="3" value="Anti Aging">
+                       <div class="opt-texts">Melasma</div>
+                    </div>
+                    </div>
+                    <div class='review_box_2'>
+                      <div class="review-box-content-opt" data-index="1" value="Anti Aging">
+                        <div class="opt-texts">Even tone</div>
+                      </div>
+                      <div class="review-box-content-opt" data-index="2" value="Anti Aging">
+                        <div class="opt-texts">Hydrated skin</div>
+                    </div>
+                  </div>
+                </div>
+                 <div class='review_box_content'>
+                  <div class='review_box_3'>
+                    <div class="review-box-content-opt" data-index="1" value="Anti Aging">
+                       <div class="opt-texts">Redness</div>
+                    </div>
+                    <div class="review-box-content-opt" data-index="2" value="Anti Aging">
+                       <div class="opt-texts">Even pores</div>
+                    </div>
+                    <div class="review-box-content-opt" data-index="3" value="Anti Aging">
+                       <div class="opt-texts">Rejuvenate</div>
+                    </div>
+                    </div>
+                    <div class='review_box_2'>
+                      <div class="review-box-content-opt" data-index="1" value="Anti Aging">
+                        <div class="opt-texts">Brightness</div>
+                      </div>
+                      <div class="review-box-content-opt" data-index="2" value="Anti Aging">
+                        <div class="opt-texts">Clear Skin</div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+     {% comment %} CD Sanket  </div> {% endcomment %}
+    
+          <div class='footer-review-quiz-page product_section_name' id='nav_reviews_section'>
+           <div id="rev-sec" class="c-faq faq-q-section clearfix">
+             
+             {% include 'judgeme_all_reviews' %}
+             
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+  
+                
+    <div class="quiz-footer footer-p">
+      <div class="footer-i">
+        <div class="quiz-nav small--hide">
+          <a href="#" class="lnk lnk-back btnBack">
+            <span class="lnk-icon">{%- render 'icon-prev' -%}</span>
+            <span class="lnk-text">Back</span>
+          </a>
+        </div>
+
+        <div class="footer-action">
+          <a href="#" class="lnk lnk-back btnBack medium-up--hide">
+            <span class="lnk-icon">{%- render 'icon-prev' -%}</span>
+          </a>
+          <button type="button" class="sf__btn sf__btn-primary btnNextButton">Next</button>
+          {% comment %}<button type="button" class="sf__btn sf__btn-primary btn-add-recipe toggleBag"><span class="btn-icon medium-up--hide">{%- render 'icon', name: 'cart' -%}<span class="btn-badge _added_count">0</span></span><span class="btn-text">Add your recipe</span></button>{% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% comment %}
+  <a href="#" class="toggle-bag toggleBag hide-elem">
+    <span class="bag-icon">{%- render 'icon', name: 'cart' -%}<span class="count-badge _added_count">0</span></span>
+    <span class="bag-text">Your recipe bag | <span class="bag-price _total_added_price">$0.00</span></span>
+    <span class="bag-lbl">View Recipe Bag</span>
+  </a>
+   {% endcomment %}
+</div>
+
+<div class="quiz-drawer">
+  <div class="drawer">
+    <div class="drawer-header">
+      <div class="drawer-heading">
+        <h3>Your recipe bag</h3>
+        <span class="_header_count">(empty)</span>
+      </div>
+      <div class="drawer-close">
+        <a href="#" class="btn-close drawerClose">
+          <span class="close-icon">{%- render 'icon-close' -%}</span>
+        </a>
+      </div>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-empty drawerEmpty">
+        <p>Your recipe bag is empty.</p>
+        <p>Add individual items or quick add below.</p>
+        <div class="empty-suggestion">
+          <button class="sf__btn sf__btn-primary btn-action btnAddAllItems">
+            <span class="btn-icon icon-plus">{%- render 'icon', name: 'plus' -%}</span>
+            <span class="btn-icon icon-bag">{%- render 'icon', name: 'cart' -%}</span>
+            <span class="btn-text">
+              <span class="btn-primtext">Add your full recipe</span>
+              <span class="btn-price medium-up--hide">$104.91</span>
+              <span class="btn-subtext">(<span class="_items_count" count="0"></span> items)</span>
+            </span>
+            <span class="btn-price small--hide _total_price" data-amount="0"></span>
+          </button>
+        </div>
+      </div>
+      <div class="drawer-items drawerItems hidden">
+        <div class="items-wrap itemsWrap"></div>
+        <div class="drawer-footer">
+          <div class="items-total">
+            <label>Total</label>
+            <span class="_total_added_price"></span>
+          </div>
+          <div class="items-action">
+            <a href="#" class="btn-add-items btnAddItems">Add to basket</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/plain" id="productBox">
+  <div class="result-box _result_box _product_item">
+    <div class="box-info">
+      <div class="box-img _p_img">
+        <img src="#">
+  </div>
+      <div class="box-content">
+        <p class="box-title _p_title"></p>
+        <div class="box-ratings">
+          <div class="box-reviews"></div>
+          <div class="box-ampm _p_am_pm">
+            <span class="ampm-itm">
+              <img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/sun_icon.png?v=1631789634" class="ampm-icon"><span class="ampm-text">AM</span>
+  </span>
+            <span class="ampm-plus">{%- render 'icon', name: 'plus' -%}</span>
+            <span class="ampm-itm">
+              <img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/moon_icon.png?v=1631789668" class="ampm-icon"><span class="ampm-text">PM</span>
+  </span>
+  </div>
+  </div>
+        <div class="short-desc">
+          <div class="_p_desc"></div>
+          <a href="#" class="box-lnk _box_lnk"><span class="lnk-text">Learn more</span> <span class="box-icon"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/right-chevron.png?v=1632893518"></span></a>
+  </div>
+  </div>
+      {%- comment -%}
+      <div class="short-desc medium-up--hide">
+        <p>A must have hydration step in every recipe. A powerful moisture-binding ingredient that works beneath the skin surface and can hold up to 1000x its weight in water.</p>
+        <a href="#" class="box-lnk box_lnk"><span class="lnk-text">Learn more</span> <span class="box-icon"><img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/right-chevron.png?v=1632893518"></span></a>
+  </div>
+      {%- endcomment -%}
+  </div>
+    <div class="box-meta">
+      <div class="meta-text">Because you mentioned <strong class="_p_goal"></strong></div>
+      <div class="meta-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0599/7844/9071/files/human-neck-svgrepo-com.svg?v=1631790430">
+  </div>
+  </div>
+    <div class="price-action">
+      <div class="box-pricing">
+        <span class="box-price _p_price">Rs. 599/-</span>
+        <span class="box-price compare-price _p_c_price">Rs. 599/-</span>
+        <span class="box-variant _p_variant"></span>
+  </div>
+      <div class="box-action">
+        <div class="box-qty qtyParent">
+          <button class="btn-qty btnQty" data-action="minus">
+            <span class="qty-icon">{%- render 'icon', name: 'minus' -%}</span>
+  </button>
+          <input type="text" class="qty-input qtyInput" value="1" readonly>
+          <button class="btn-qty btnQty" data-action="plus">
+            <span class="qty-icon">{%- render 'icon', name: 'plus' -%}</span>
+  </button>
+  </div>
+        <button class="sf__btn sf__btn-primary btn-atc btnAdd">
+          <span class="btn-icon icon-plus">{%- render 'icon', name: 'plus' -%}</span>
+          <span class="btn-icon icon-bag">{%- render 'icon', name: 'cart' -%}</span>
+          <span class="btn-text">
+            <span class="btn-primtext">Add to bag</span>
+  </span>
+  </button>
+  </div>
+  </div>
+  </div>
+</script>
+
+<style>
+  body,html{background: #F8F8FA;}
+  #shopify-section-footer{display: none;}
+</style>
+
+<script type="text/plain" id="cartItemHTML">
+  {%- raw -%}
+  <div class="drawer-item drawerItem _product_item">
+    <span class="item-title _item_title"></span>
+    <span class="item-qty">
+      <label class="qty-label">Qty</label>
+      <span class="qty-box qtyParent">
+        <button class="btn-qty btnQty" data-action="minus">
+          <span class="qty-icon">{%- endraw -%}{%- render 'icon', name: 'minus' -%}{%- raw -%}</span>
+  </button>
+        <input type="text" class="qty-input qtyInput" value="1" readonly>
+        <button class="btn-qty btnQty" data-action="plus">
+          <span class="qty-icon">{%- endraw -%}{%- render 'icon', name: 'plus' -%}{%- raw -%}</span>
+  </button>
+  </span>
+  </span>
+    <span class="item-price _item_price"></span>
+    <span class="item-action">
+      <a href="#" class="item-remove itemRemove">
+        <span class="icon-remove">{%- endraw -%}{%- render 'icon', name: 'x' -%}{%- raw -%}</span>
+  </a>
+  </span>
+  </div>
+  {%- endraw -%}
+</script>
+
+{% schema %}
+{
+"name": "Quiz",
+"settings": []
+}
+{% endschema %}
