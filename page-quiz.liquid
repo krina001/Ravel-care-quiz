@@ -1,0 +1,2112 @@
+<style>
+
+{% comment %}   CD Sanket {% endcomment %}
+.best_seller_set { width: 100%; height: 35px; padding: 5px 0; letter-spacing: 5px; }
+.selction-p-set .sel-pr-row1.pr-row { padding: 0 !important; }
+.custom-selection .selection-products .selection-product.selction-p-set { width: calc(33.33% - 20px); margin: 0; overflow: hidden; margin-bottom: 30px; border-radius: 1.5%; height: unset;}
+a.bst-seller.best_seller_set { border-radius: unset; text-transform: uppercase; padding: 5px 10px; }
+a.bst-seller.best_seller_set:hover { color: #fff; }
+.sel-pr-img.sel-img-w .short_text_meta { width: 100%; }
+.custom-selection .selection-products .sel-pr-prices.sel-p-prices { width: 50% !important; }
+.btn_css_add { width: 100%; height: 40px; margin: 10px 0; border-radius: 5px; border: 2px solid #4D4747 !important;}
+.custom-selection .save-price.add_margin_set { margin-right: 40px; }
+.page-width.top-margin-set { margin-top: 50px; }
+.custom-selection .selction-p-set .pricing-row { justify-content: center; }
+.custom-selection .selection-products .sel-pr-btn {margin-top: 0 !important; }
+.custom-selection .selection-products .sel-pr-btn .btn_css_add {margin-top: 0 !important; }
+.custom-selection .selection-products .sel-pr-prices.sel-p-prices { margin-bottom: 10px; }
+.sel-img-w .sel-pr-title { font-weight: 500; }
+.selection-inner .opt-text { width: calc(100% - 60px); padding-left: 20px; font-size: 18px; }
+.selection-inner .quiz-drawer-ask {margin: 0; z-index: 999; left: 22%; right: 22%;}
+.footer-bar-set .btnNext { font-size: 18px; }
+.quiz-drawer-ask {bottom: 81px;}
+.quiz-wrap .quiz-tag span { font-weight: 400; letter-spacing: 1px; text-transform: uppercase;}
+.quiz-box {border: unset !important; border-radius: unset !important;}
+
+  /* CD CODE */
+.header_timer{display: none !important;}
+.template-page.Quiz #shopify-section-footer{display: none;}
+body{background: #FEFCFA; min-height: 100vh;}
+body .custom_new_quiz .selection-footer{background: #FEFCFA;}
+body .custom_new_quiz{background-color: transparent;}
+.custom-selection {--spacing-top: 35px;padding-top: var(--spacing-top);}
+.custom_new_quiz .slide-1 h2, .custom_new_quiz .selection-slide .selection-content h3{color: #000; font-family: Merriweather; font-size: 26px; line-height: normal; letter-spacing: 1px;}
+.custom_new_quiz .slide-1 .pro_image .bottle_name{position: absolute; top: calc(50% - 8px); transform: translateY(-50%); display: inline-block; line-height: 1; color: #000; left: 48%; font-size: 12px;}
+.custom_new_quiz .slide-1 .pro_image{padding: 30px 0 15px; max-width: 280px; margin: 0 auto; position: relative;}
+.custom_new_quiz .slide-1 .pro_image img{width: 100%; height: 100%; vertical-align: middle;}
+.custom_new_quiz .slide-1 .selection-desc .selection-input{padding: 15px; border-radius: 15px; border: 1px solid #b9b9b9; font-size: 20px; max-width: 335px;}
+.custom_new_quiz .slide-1 .selection-desc .selection-input::placeholder{font-size: 18px !important; }
+/* .custom_new_quiz .slide-1 .error_show.hide{display: block !important; opacity: 0;} */
+.custom_new_quiz{margin: 0;}
+.custom_new_quiz .slide-1 .short_description{margin: 20px 0;}
+.custom_new_quiz .slide-1 .short_description p{margin: 0; font-size: 14px;}
+
+.custom_new_quiz .slideChoices .selection-choices.multiple_slideChoices{display: flex; flex-wrap: wrap; padding-bottom: 15px; border-bottom: 1px solid #BAB7B4; justify-content: center; margin-top: 25px; margin-bottom: 25px;}
+.custom_new_quiz .slideChoices .selection-choices.multiple_slideChoices .selection-choice{display: block;width: 25%; text-align: center; justify-content: center; background-color: transparent; border: none; box-shadow: unset; margin: 0; padding: 10px 6px;}
+.custom_new_quiz .slideChoices .selection-choices.multiple_slideChoices .selection-choice .choice-img{width: 100%; border-radius: 50%; overflow: hidden; border: 2px solid #BAB7B4;}
+.custom_new_quiz .slideChoices .selection-choices.multiple_slideChoices .selection-choice .choice-label{width: 100%; padding: 10px 0 0; text-align: center; font-family: Merriweather; color: #262424;}
+.custom_new_quiz .slideChoices:not(.slide-2) .selection-choices.multiple_slideChoices .selection-choice.active-choice .choice-img{border-color: #c1f0e5; color: #262424; background-color: #c1f0e5;}
+.custom_new_quiz .slideChoices .selection-choices.multiple_slideChoices .selection-choice .choice-desc{font-family: Merriweather; color: #262424; font-size: 11px;}
+.custom_new_quiz .slideChoices .selection-choices.multiple_slideChoices .selection-choice .choice-img img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
+.custom_new_quiz .slideChoices.radio_Required .selection-content p{margin: 0 auto 25px;}
+.custom_new_quiz .slide-2.slideChoices .selection-choices.multiple_slideChoices .selection-choice .choice-img{border: 0; background-color: #787887; color: #787887;}
+.custom_new_quiz .slideChoices.slide-2 .selection-choices.multiple_slideChoices .selection-choice.active-choice .choice-img{color: #61c8b3; background-color: #61c8b3 !important;}
+.custom_new_quiz .slide-2.slideChoices .selection-choices.multiple_slideChoices .selection-choice .choice-img svg ellipse{fill: currentColor;}
+  
+.custom_new_quiz.custom-selection .que-slide .selection-choice{border-radius: 12px; border: 1px solid #D7D8D6;}
+.custom_new_quiz.custom-selection .selection-slide:not(.slide-1) .selection-desc{margin-top: 30px;}
+
+.custom-selection.custom_new_quiz .selection-slide.focus_goal .selection-choice{width: calc(50% - 14px); margin: 0 7px 15px;}
+
+.custom_new_quiz.custom-selection .selection-choice.active-choice, .custom_new_quiz.custom-selection .selection-slide.custom_swatches .selection-choice.active-choice{background-color: #f2f9f7; border-color: #c1f0e5;}
+.custom_new_quiz.custom-selection .selection-choice.active-choice .choice-label{color: #000;}
+.custom_new_quiz.custom-selection .que-slide .selection-choice.jsRadio{border-radius: 9px;}
+
+.custom_new_quiz.custom-selection .selection-slide.custom_swatches .selection-choice{width: calc(50% - 14px); font-size: 14px; padding: 10px; margin: 0 7px 14px; min-height: auto; background-color: #fff; box-shadow: #332e540f 0 1px 3px; border-radius: 12px; border: 1px solid #D7D8D6; display: flex; flex-direction: column;}
+.custom_new_quiz.custom-selection .selection-slide.custom_swatches .selection-choice .choice-label{padding: 0 !important;}
+
+.custom_new_quiz.custom-selection .selection-input{border-radius: 9px; border: 1px solid #DBDDDC;}
+
+.custom_new_quiz.custom-selection .selection-slide.choice_color_pro_list .hair-care-color{padding: 5px 5px 5px 10px; }
+.custom_new_quiz.custom-selection .selection-slide.choice_color_pro_list .hair-care-color .selected-color-img{flex: 0 0 auto; max-width: 73px; margin: 0;}
+.custom_new_quiz.custom-selection .selection-slide.choice_color_pro_list .hair-care-color .selected-color-img img{width: 100%; height: 100%; display: block !important;}
+.custom_new_quiz.custom-selection .selection-slide.choice_color_pro_list .hair-care-color .image_info{flex: 1; padding-left: 10px;}
+.custom_new_quiz.custom-selection .selection-slide.choice_color_pro_list .hair-care-color .image_info .choice-label{color: #000; font-family: Merriweather; font-size: 17px; font-weight: bold; padding: 0 0 5px; width: 100%;}
+.custom_new_quiz.custom-selection .selection-slide.choice_color_pro_list .hair-care-color .image_info p{margin-bottom: 0; text-align: left; color: #000; font-family: Merriweather; font-size: 13px; line-height: normal; font-weight: 400;}
+
+.custom_new_quiz.custom-selection .selection-slide .lodding_message{font-size: 32px; line-height: 1; font-family: Merriweather; margin: 35px 0 0;}
+
+.custom-selection.custom_new_quiz .page-width.top-margin-set .selection-inner{max-width: 100%;}
+.custom-selection.custom_new_quiz .klaviyo_slide .form-title{color: #000; font-family: Merriweather; font-size: 26px; line-height: normal; letter-spacing: 1px;}
+
+
+.custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list{display: flex; flex-wrap: wrap; padding: 0 20px; align-items: center;}
+.custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .custom_variant_label{flex: 0 0 auto; font-size: 13px;}
+.custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .list-body{flex: 1; padding-left: 10px;}
+.custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .list-body .list-row{display: inline-block; position: relative; min-width: 82px; padding: 8px 4px; cursor: pointer;}
+.custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .list-body .list-variant{padding: 5px 10px; border-radius: 11px; background: #D3EAE5; text-align: center; font-family: Josefin Sans; font-size: 11px; font-weight: 400; line-height: normal; letter-spacing: 0.48px;}
+.custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .list-body .var-discount{color: #FFF; text-align: center; font-family: Merriweather Sans; font-size: 8.5px; font-weight: bold; line-height: normal; border-radius: 3px; background: #F38594; padding: 0 7px; position: absolute; top: 1px; left: 50%; transform: translateX(-50%); width: max-content; display: inline-block;}
+.custom-selection.custom_new_quiz .selection-slide.finalSlide{opacity: 0; transition: all 1s ease;}
+.custom-selection.custom_new_quiz .page-width.top-margin-set .selection-slide.finalSlide{opacity: 1;}
+.custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .list-body .active .list-variant{background: #89E5D3;}
+.custom-selection.custom_new_quiz .selection-product .popup_btn{width: 100%; margin: 0 10px 15px; padding: 10px 0 15px; border-bottom: 1px solid #9C9C9C;}
+.custom-selection.custom_new_quiz .selection-product .popup_btn .txt-popup{color: #B50000 !important; text-align: center; font-family: Merriweather; font-size: 11px !important; font-weight: 700; letter-spacing: 2.4px; text-decoration-line: underline; text-transform: uppercase; width: 100%;}
+.custom-selection.custom_new_quiz .selection-product .jsBtnAdd{border-radius: 25px; background: #000; border-color: #000 !important;}
+.custom-selection.custom_new_quiz .selection-product .jsBtnAdd .txt-add{padding: 5.5px 0;}
+.custom-selection.custom_new_quiz .selection-products .selection-product.selction-p-set{border: none !important; border-radius: 7px;}
+.custom-selection.custom_new_quiz .selection-product .short_text_meta:not(.txt-popup), .custom-selection.custom_new_quiz .selection-product .sel-pr-details{padding-right: 20px;}
+
+.custom_new_quiz.custom-selection .klaviyo_slide form input{opacity: 0.5; margin-bottom: 25px; border-width: 1px !important;}
+.custom_new_quiz.custom-selection .klaviyo_slide form input:focus, .custom_new_quiz.custom-selection .klaviyo_slide form input:not(:placeholder-shown){opacity: 1;}
+.custom_new_quiz.custom-selection .selection-products .sel-pr-btn button span{letter-spacing: 0.5px; font-weight: bold;}
+.custom_new_quiz.custom-selection .sel-img-w .sel-product-img-a{padding-top: 70%;}
+.custom_new_quiz.custom-selection .selection-product .bst-seller{z-index: 11; font-size: 10px; height: 24px; letter-spacing: 5.5px;}
+.custom_new_quiz.custom-selection .Next-slide-btn{width: 100%; border-radius: 12px; background-color: #000;}
+.custom_new_quiz.custom-selection .Next-slide-btn.btn-inactive{pointer-events: none; background-color: #a5a5a5;}
+
+.template-page.Quiz .selection-slide.klaviyo_slide form{padding: 20px 20px 0px;}
+.template-page.Quiz .custom_new_quiz.custom-selection .klaviyo_slide form input{margin-bottom: 15px; padding: 25px 16px!important;}
+.template-page.Quiz .custom_new_quiz.custom-selection .klaviyo_slide form input::placeholder{font-weight: bold;}
+
+.custom-selection.custom_new_quiz .high-performing-s-words span{-webkit-text-decoration-line: line-through; -webkit-text-decoration-thickness: 2px;}
+  
+@media screen and (min-width: 768px){
+  .custom_new_quiz .slide-1 .pro_image{max-width: 350px;}
+  .custom_new_quiz .slide-1 .pro_image .bottle_name{top: calc(50% - 12px); font-size: 18px;}
+}
+  
+@media screen and (max-width: 1200px){
+  .custom-selection .selection-products .selection-product.selction-p-set {width: 100% }
+  .custom-selection .custom-pricing { font-size: 22px; }
+  .custom-selection .selection-products .custom-pricing .sel-pr-c-price { font-size: 14px; margin-top: 3px;}
+  .c-stars { width: 100% !important; }
+  .review-tags { width: 100% !important; margin-top: 50px; }
+  .custom-selection .selection-inner { max-width: 550px !important; }
+  .inner-video-section { width: 100% !important; }
+  .ing-index-list ul li { width: 50% !important; }
+  .inner-highlighted-review { width: 100% !important; }
+  .total-purchases { margin-top: 20px; }
+}
+
+@media screen and (max-width: 767px){
+  .custom-selection .selection-products .sel-img-w img.sel-product-img { height: unset; }
+  .total-purchases { margin-top: 0; }
+  .selection-slide.slide-12.finalSlide.active-slide{padding-top: 60px;}
+}
+
+@media screen and (max-width: 450px){
+  .quiz-wrap .quiz-tag span { font-size: 11px;}
+  .pro_image-with_text2 {margin-top: 10px; }
+
+
+  .custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .custom_variant_label{text-align: left; font-size: 10px; padding-right: 10px;}
+  .custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .list-body .list-variant{font-size: 8px; padding: 5px;}
+  .custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .list-body{padding: 0; text-align: left;}
+  .custom-selection.custom_new_quiz .selection-product .variant-picker .custom_variant-list .list-body .list-row{min-width: 60px; padding: 8px 2px;}
+  {% comment %} .custom-selection.custom_new_quiz .selection-product .custom-pricing{font-size: 14px;} {% endcomment %}
+  .custom-selection.custom_new_quiz .selection-products .custom-pricing .sel-pr-c-price{font-size: 12px;}
+  .custom-selection.custom_new_quiz .selection-product .popup_btn .txt-popup{font-size: 10px;}
+  .custom-selection.custom_new_quiz .selection-product .sel-pr-row1{margin-bottom: 5px;}
+}
+
+@media screen and (max-width: 548px){
+  .custom-selection .sel-footer .footer-info {display:none;}
+  .footer-inner.footer-bar-set { position: relative; }
+  .footer-bar-set .footer-info { position: absolute; bottom: 110px; }
+  .quiz-drawer-ask {bottom: 67px;}
+
+  .custom_new_quiz .product_section_name.selection-content h3, .custom_new_quiz .page-width.top-margin-set{margin-top: 0 !important;}
+}
+
+a.btn-nav.btnNext.jsBtnNav.jsBtnNav-nxt.btn-active.nocircle { background-color: #4D4747; min-width: 250px; border-radius: 3px; }
+.hom{display:block !important;}
+.dom{display:none !important;}
+span.sel-pr-c-price {font-size: 18px; margin-left: 15px;}
+span.money_sale_percent { width: 100%; display: block; font-size: 17px; margin-top: 16px; font-weight: 600; }
+.custom-selection .selection-products .sel-pr-c-price:after { height: 1px !important; left: -4px; right: 2px !important; bottom: 13px; transform: rotate( 8deg ); }
+.before-after-slider h2 {margin-bottom: 30px;}
+span.txt-added {cursor: default;}
+.selection-slide.slide-12.finalSlide.active-slide ~ .final-page-s {display: block !important;}
+.before-after-slider .owl-stage-outer {height: 700px;}
+.gridsticky { position: fixed; bottom: 0; background-color: #dfeee9; width: 100%; border-top: 1px solid #000; z-index: 10; margin: 0; text-align: center; left: 0; display:none; }
+.selection-product.jsSelectProduct.pro-selected ~ .gridsticky .btnBuy {display: block;}
+.selection-product.jsSelectProduct ~ .gridsticky .btnBuy {display: none;}
+.selection-product.jsSelectProduct.pro-selected ~ .gridsticky .anchortoaddpro {display: none;}              
+.selection-product.jsSelectProduct ~ .gridsticky .anchortoaddpro {display: block;}
+.gridsticky .btn, .gridsticky .btn span {background-color: #dfeee9;color: #000;padding: 0;}
+.gridsticky .btn:hover, .gridsticky .btn span:hover {background: transparent;color:#000;}
+span.txt-remove {cursor: pointer;}
+.custom-selection .que-slide h3, .custom-selection .que-slide .h3 {font-size: 25px;margin-top: 0;}
+.custom-selection .selection-products .sel-pr-btn button span {padding: 7.5px 0; display:block;}
+.custom-selection .que-slide p {width: 100%;margin: 0 auto 40px;}
+.custom-selection .selection-products .selection-product { width: 28%; margin: 0 2.5% 25px; float: left; height: fit-content;} p.sel-pr-opt { margin-bottom: 0; }
+.before-after-slider { background: #fff; width: 100%; margin: 0 auto; padding: 0 17.5%; }
+.c-stars { width: 50%; float: left; vertical-align: middle; top: 55px;position: relative;}
+.total-purchases { background: #DFEEE9; padding: 30px; display: inline-block; width: 100%; }
+.review-tags { width: 50%; float: left; }
+.info-slide .selection-content p { margin-bottom: 70px; width: 60%; margin: 0 auto; }
+.custom-selection .btnNext { background-color: #4D4747; }
+.custom-selection .btnNext span { color: #fff; }
+.custom-selection .btn-nav.btn-active { background-color: #4D4747; }
+.custom-selection .btn-nav.btn-active:hover { background-color: #4b6767; }
+.selection-slide.slide-2.manualChange.info-slide.active-slide ~ .selection-footer .btnNext { background-color: #4D4747; }  
+.selection-slide.slide-2.manualChange.info-slide.active-slide ~ .selection-footer .btnNext span { color: #fff; }
+.inner-wrapper-i { width: 45%; margin: 0 2.5% 40px; }
+.custom-selection .key-ingredients { position: relative; padding: 0px 0px; margin: 0; background: #fff; }
+.custom-selection .key-ingredients .key-ingredient { width: 33.33%; padding: 0 10px 15px; background: #fff; float:left; border-radius: 0 0 35px 35px; }
+.key-content p { background: transparent !important; }
+.inner-wrapper-i { border-radius: 25px !important; margin-bottom: 40px; border-right: 5px solid #DFEEE9; border-left: 5px solid #DFEEE9; border-bottom: 5px solid #DFEEE9; box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.25); }
+.inner-wrapper-i > p { text-align: left; padding-left: 21px; padding-bottom: 21px; }
+.inner-wrapper-i h2 { padding-top: 22px; color: #000; text-align: left; border-radius: 20px 20px 0 0; }
+.inner-wrapper-i h2, .inner-wrapper-i p { background: #DFEEE9; margin: 0; }
+.key-ingredients-title h3, .key-ingredients-title p { text-align: left; margin-bottom: 0px; color: #000; }
+.key-ingredients-title p { padding-left: 30px; line-height: 1.4; }
+.key-ingredients-title { background-color: #DFEEE9; position: relative; padding: 20px 12px; box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.25); border-radius: 15px 15px 0 0; margin-top: 40px; }
+.custom-selection h3, .custom-selection .h3 { font-family: "Josefin sans",sans-serif; color: #000000; }
+.key-more { padding: 30px 0 0; }
+.hair-health { width: 23%; margin: 0 auto 70px; }
+.selection-content p { width: 65%; margin: 0 auto 0px; }
+.selection-slide.slide-19.ingredients-cont.manualChange .selection-content p { margin-bottom: 45px; }
+.hair-health p { width: 85%; margin: 0 auto 10px; font-size: 14px; color:#000; }
+span.triangle-svg { background: url(https://cdn.shopify.com/s/files/1/0256/1071/5182/files/triangle_1.png?v=1611174996); background-size: 100%; width: 12px; height: 12px; top: 2px; /* right: -12px; */ display: block; position: relative; background-repeat: no-repeat; }
+.selection-content h3 {font-size: 34px;}
+.inner-wrapper-i h2 { font-size: 23px; padding-left: 5px; }
+.hair-health h2 { margin-bottom: 0; color: #000; font-weight: 500; font-size: 24px; }
+.free-ship svg { width: 22px; position: relative; top: 4px; margin-right: 6px; }
+/*.floating-tick-selected { display: none; }*/
+.floating-tick-selected svg { fill: #fff; }
+.jsSelectProduct.pro-selected .floating-tick-selected { display: block; width: 15px; position: absolute; top: 0; right: 0; background: #4D4747; border-radius: 0 20px 0 0; padding: 8px 20px; }
+.floating-tick-selected svg { position: relative; right: 8px; top: 2px; width: 15px; }
+.jsSelectProduct.pro-selected .floating-tick-selected { display: block; width: 15px; position: absolute; top: 0; right: 0px; background: #4D4747; border-radius: 0 20px 0 0; padding: 5px 18px; }
+.jsSelectProduct.pro-selected { box-shadow: 0px 0px 0px 4px #4D4747 !important; }
+span.free-text-ship { font-family: "Josefin Sans","Helvetica Neue",Arial,"Lucida Grande",sans-serif; font-size: 12px; font-weight: 600; }
+a.bst-seller i { position: relative; top: 1px; }
+a.bst-seller { position: absolute; display: block; top: 0; background: #1C1F29; color: #fff; font-size: 15px; padding: 3px 10px; border-radius: 19px 0; }
+.free-ship { margin: 0px auto 15px; }
+.selection-slide.slide-19.ingredients-cont.active-slide { padding: 20px 20px; background: #fff; }
+.contain { margin: 0 auto; max-width: 1200px; width: 100%; }
+.what-we-dont-use p { text-align: center; }
+.c-faq.faq-q-section.clearfix { padding: 0 25px; }
+.c-faq.faq-q-section.clearfix a.primary-btn-ques { background: #2A3B3B; margin: 35px auto; }
+.c-faq.faq-q-section .faq-q-list { width: 100%; }
+.c-faq.faq-q-section.clearfix h2 { font-size: 30px; }
+.what-we-dont-use .ing-index-list ul li p { text-align: left; line-height: 1; font-size: 15px; word-break: break-word; }
+.ing-index-list ul li { width: 25%;}
+.what-we-dont-use { padding: 45px 50px 20px; width: 90%; margin: 0 auto; }
+.what-we-dont-use li { margin-bottom: 10px !important; }
+.what-we-dont-use { padding: 45px 20px 20px; }
+.ravel-comparision { background: #fff; padding: 40px 25px; }
+.ravel-comparision img { padding: 40px 0 0; width: 65%; text-align: center; margin: 0 auto; display: block; }
+.ravel-comparision li p { display: flex; line-height: 1.2; color: #000; padding-left: 6px; padding-right:10px; }
+.ravel-comparision svg { background:#49bcb8; width: 24px; padding: 7px; border-radius: 50%; float: left; }
+.ravel-features .feat-icon-text .feat-ic-item { width: 20%; }
+.before-after-slider .primary-btn-ques { margin: 24px auto; }
+.ravel-features .feat-icon-text { width: 65%; display: -webkit-box; display: flex; flex-wrap: wrap; margin: 0 auto 25px; justify-content: center; }
+.before-after-slider { padding-bottom: 1px; }
+h2.c-section-title { font-family: "Glacial Indifference",sans-serif; color: #000; font-size: 23px; text-align: center; margin-bottom:35px; }
+h2.g--section-title { font-family: "Glacial Indifference",sans-serif; font-size: 26px; font-weight: 500; text-align: center; margin-bottom: 30PX; }
+.ravel-features { padding: 50px 0px; }
+.ravel-features p { text-align: center; }
+.before-after-slider { background: #fff; }
+.item { align-items: center; display: flex; height: 300px; justify-content: center; }
+.highlight-reviews .secondary-btn-ques { margin: 35px auto; }
+a.btn-nav.btnNext.jsBtnNav.jsBtnNav-nxt.btn-active.nocircle .icn { display: none; }
+.inner-highlighted-review { padding: 15px 0 25px; border-bottom: none; width: 30.33%; margin: 0 1.5%; float: left; }
+.high-star { margin-bottom: 6px; }
+a.primary-btn-ques { width: 28%; background: #4D4747; display: block; margin: 0 auto; padding: 10px 15px; border-radius: 6px; color: #fff; text-align: center; letter-spacing: 2px; }
+.hightlighted-review-content h4 { margin-bottom: 6px; }
+.highlight-reviews { padding: 0 15px 25px 15px; background: #fff; }
+.highlight-reviews h3 { font-size: 15px; }
+a.secondary-btn-ques { width: 75%; background: #ffffff; display: block; margin: 0 auto; padding: 10px 15px; border-radius: 6px; color: #4D4747; text-align: center; letter-spacing: 2px; border: 1px solid #4D4747; }
+.inner-video-section { BACKGROUND: #F8F4F1; margin-bottom: 30px; width: 30.33%; margin: 35px 1.5%; float: left; }
+img.profile-img { width: 45px; border-radius: 50%; margin-right: 10px; }
+.video-content { display: table; PADDING: 15px 15PX 0; }
+span.med-star i { font-size: 9px !important; position: relative; top: 3px; left: 8px; }
+  
+  .rev-add-details {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+  span.promoter-name {
+    font-size: 18px;
+color:#000;}
+  
+  p.review-description {
+    margin-bottom: 0;
+}
+  p.review-content {
+    font-size: 17px;
+    color: #000;
+    line-height: 1.4;
+}
+  
+  span.t-rev {
+    font-size: 15px;
+    position: relative;
+    top: -2px;
+    left: 5px;
+    color: #000;
+}
+  
+  .vid-reviews h5:before {
+    display: block;
+    content: "";
+    border-top: 2px solid #000000;
+    width: 70px;
+    height: 2px;
+    margin: 0 0rem;
+    transform: translateX(-80px);
+    position: relative;
+    top: 8px;
+}
+  
+  .vid-reviews h5 {
+    position: relative;
+    left: 80px;
+}
+  
+  .vid-reviews h1 {
+    color: #000;
+    font-family: "Glacial Indifference",sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    letter-spacing: 1.5px;
+}
+  .inner-main-star {
+    width: fit-content;
+    margin: 0 auto;
+}
+  .c-stars h1 {
+    font-family: "Glacial Indifference",sans-serif;
+    color: #000;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+  
+  a.more-rev-btn {
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    padding: 15px 25px;
+    background: #1C1F29;
+    color: #fff;
+    border-radius: 25px;
+    margin: 0 auto 50px;
+    width: fit-content;
+    display: block;
+}
+
+.custom-selection .selection-products .selection-product {
+        border-radius: 25px;
+    padding: 30px 0 0;
+    border: 0px solid transparent;
+    background: #fff;
+    box-shadow: 0px 4px 10px 4px rgb(222 218 218);
+    position: relative;
+}
+
+.custom-selection .selection-products .sel-pr-img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.custom-selection .selection-products .sel-pr-details {
+    width: 75%;
+    text-align: center;
+    padding-left: 0;
+    margin: 25px auto 0;
+}
+.vid-reviews {
+    padding: 40px 5%;
+  BACKGROUND: #FFF;
+display: inline-block;
+}
+  
+  .inner-video-section{
+  
+  }
+
+.custom-selection .selection-products .sel-pr-title {
+    margin-bottom: 0;
+}
+
+.custom-selection .selection-products .sel-pr-prices {
+    font-weight: bold;
+    padding-right: 0;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+  
+  .video-content ~ p {
+    font-family: "Glacial Indifference",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: #5f5f5f;
+    padding: 0 15px 25px;
+}
+.custom-selection .selection-products .sel-pr-btn {
+    width: 50%;
+}
+  
+  .custom-selection .selection-products .sel-pr-btn button.btn-added span {
+    color: #000000;
+    font-size: 17px;
+width: 100%;
+}
+  
+  .custom-selection .selection-products .sel-pr-btn button.btn-added span {
+    padding: 4.3px 0;
+}
+  
+  .custom-selection .selection-products .sel-pr-btn.btn-added {
+    background: #F8F4F1;
+    border-top: 1px solid #1c1f29;
+    border-radius: 0 0 35px 35px;
+}
+  
+  .custom-selection .selection-products button.jsBtnAdd.btn-added {
+    background: #F8F4F1;
+    border: none;
+    text-transform: capitalize;
+    padding:0;
+}
+
+
+.custom-selection .selection-products .sel-pr-btn button {
+    background-color: #1c1f29;
+    color: #fff;
+    border: 2px solid #1c1f29;
+    width: 100%;
+    padding: 0px 0;
+    background: #4d4747;
+}
+  
+  .two-tags span:nth-child(1) {
+    margin-left: 15%;
+     background: #FFD4DB;
+}
+  
+    
+  .two-tags span:nth-child(2) {
+     background: #D3E8C9;
+}
+  
+  .three-tags span:nth-child(2) {
+    margin: 0 8px;
+}
+  
+  .two-tags span {
+    margin: 0 4px 10px;
+}
+  
+  .total-purchases {
+    background: #DFEEE9;
+    padding: 30px;
+}
+  
+  p.vid-main-head {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+  
+  .c-stars p {
+    font-size: 21px;
+    color: #000;
+    line-height: 1.2;
+    width: 70%;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+  
+  .review-tags span {
+    padding: 6px 12px;
+    width: 30.5%;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+  
+  .three-tags span:nth-child(1) {
+    background: #D9BEE1;
+}
+  
+  .three-tags span:nth-child(2) {
+    background: #FFD396;
+}
+  
+  .three-tags span:nth-child(3) {
+    background: #FFD4DB;
+}
+  
+  span.jdgm-rev__buyer-badge {
+    background: transparent;
+}
+  
+  .Makeorder footer.site-footer {
+    display: none;
+}
+  
+
+  @media only screen and (min-width:1280px){
+  
+  .selection-slide.slide-20.finalSlide {
+  width: 1260px;
+    position: relative;
+    left: -452px;
+}
+    
+    .final-page-s {
+        width: 1260px;
+    position: relative;
+}
+    
+    .what-we-dont-use {
+    padding: 21px 50px 20px;
+}
+    .review-tags span {
+    padding: 6px 4px;
+    width: 29.5%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+    
+    .ravel-features {
+    padding: 20px 20px;
+}
+    
+    .before-after-slider {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3% 25px;
+}
+    
+    .ing-index-list ul li {
+    width: 50%;
+    padding-right: 10px;
+}
+    
+    .ravel-comparision img {
+    padding: 40px 0 0;
+    width: 100%;
+}
+    
+    .ravel-comparision {
+    padding: 40px 50px;
+}
+    
+    .selection-slide.slide-19.ingredients-cont {
+    width: 1260px;
+    position: relative;
+    left: -452px;
+}
+
+.selection-slide.slide-19.manualChange.finalSlide.active-slide {
+        padding: 45px 20px 10px;
+    background: #fff;
+}
+    
+    .custom-selection .selection-products {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+    
+ a.btn.anchortoaddpro {
+    margin: 16px 0;
+}
+    
+    .gridsticky .btnBuy {
+    margin: 16px 0;
+}
+    
+  }
+  
+  
+  
+  @media only screen and (max-width:549px){
+    
+    .hom{
+    display:none !important;
+    }
+    
+      .Makeorder .nav-res-logo.medium-up--hide {
+    display: none !important;
+}
+  
+
+  .Makeorder.userscrolled .head-back {
+    height: 40px !important;
+}
+  
+    
+    .dom{
+    display:block !important;
+    }
+    
+    .gridsticky{
+    display:block;
+    }
+    
+    .before-after-slider .owl-stage-outer {
+    height: 300px;
+}
+  
+.hair-health {
+    width: 45%;
+    margin: 19px auto 20px;
+}
+    .ravel-features .feat-icon-text .feat-ic-item {
+    width: 33.33%;
+}
+    
+    
+.ing-index-list {
+    padding: 0 15px 0 5px;
+}
+    
+    .custom-selection .page-width {
+    width: 100% !important;
+    padding: 0;
+}
+    
+    .selection-slide {
+    padding: 0 22px;
+}
+    
+    .custom-selection .selection-inner {
+      max-width: 100%;}
+    
+       .what-we-dont-use {
+    padding: 21px 50px 20px;
+}
+    .review-tags span {
+    padding: 9px 0px;
+    width: 31.1%;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+    
+    .review-tags span {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 16px !important;
+}
+    
+    .three-tags span:nth-child(2) {
+    margin: 0 2%;
+}
+    
+    .ravel-features {
+    padding: 20px 0px;
+}
+    
+    .selection-content h3 {
+    font-size: 26px;
+    margin-top: 35px;
+}
+    
+    .faq-q-section {
+    padding: 30px 0;
+}
+    
+    .what-we-dont-use {
+   padding: 45px 40px 20px;
+      width: 100%;}
+    
+    .custom-selection .selection-products .sel-pr-prices {
+    width: 100%;
+    font-weight: bold;
+    padding-right: 0;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+    
+    h2.c-section-title {
+    font-family: "Glacial Indifference",sans-serif;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+    
+    .item {
+    align-items: center;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+}
+    
+    .before-after-slider .primary-btn-ques {
+    margin: 20px auto 10px;
+}
+    
+    p.vid-main-head {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+    
+    .vid-reviews h1 {
+    color: #000;
+    font-family: "Glacial Indifference",sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+}
+    
+    p.review-content {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.4;
+}
+    
+    .video-content ~ p {
+    font-family: "Glacial Indifference",sans-serif;
+      font-size: 16px;}
+    
+    span.promoter-name {
+    font-size: 13px;
+    color: #000;
+}
+    
+    img.profile-img {
+      width: 30px;}
+    
+    span.med-star i {
+    font-size: 7px !important;
+    position: relative;
+    top: 3px;
+    left: 8px;
+}
+    
+    a.primary-btn-ques {
+    width: 40%;
+    background: #4D4747;
+    display: block;
+    margin: 0 auto;
+      padding: 7px 15px;}
+
+    
+    .total-purchases {
+    background: #DFEEE9;
+    padding: 30px 20px;
+}
+
+
+    
+    .custom-selection .selection-products .sel-pr-img img {
+    vertical-align: middle;
+    width: 65%;
+}
+    
+    .inner-wrapper-i {
+    width: 100%;
+    margin: 40px 2.5% 0px;
+}
+    
+    .selection-content.reduc-padd p {
+    margin-bottom: 5px;
+}
+    
+    .selection-slide.slide-19.ingredients-cont.active-slide {
+    padding: 20px 0px;
+    background: #fff;
+}
+    
+    .inner-wrapper-i p {
+    line-height: 1.2;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+    
+    .custom-selection .selection-products .sel-pr-opt {
+    font-size: 14px;
+    color: #4F4646;
+    margin: 0 auto;
+}
+    
+    .custom-selection .key-ingredients .key-ingredient {
+      width: 33.33%;
+        padding: 0 3px 15px;}
+    
+    .key-content p {
+    font-size: 10px !important;
+}
+    .free-ship {
+    margin: 0px auto 0px;
+}
+    
+    .c-faq.faq-q-section.clearfix {
+    padding: 0 20px;
+}
+    
+    .jdgm-widget .jdgm-rev.jdgm-rev {
+    width: calc(50% - 8px) !important;
+}
+    
+    h2.g--section-title {
+    font-family: "Glacial Indifference",sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 16PX;
+}
+
+.ravel-comparision svg {
+    background: #49bcb8;
+  width: 20px;}
+    
+    .ravel-comparision svg {
+    background: #49bcb8;
+    width: 20px;
+    padding: 7px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 12px;
+}
+    
+    .ravel-comparision li p {
+    display: flex;
+    line-height: 1.2;
+    color: #000;
+    padding-left: 9px;
+    padding-right: 0px;
+}
+    
+    .custom-selection .selection-products .sel-pr-btn {
+      margin-top: 15px;}
+    .key-content h5 {
+    margin-bottom: 0px !important;
+}
+    
+    .inner-wrapper-i h2 {
+      font-size: 16px;}
+    
+    .custom-selection .selection-products .selection-product {
+      width: 96%;
+        margin: 0 2.5% 50px;}
+    
+    .c-stars {
+    width: 100%;
+    float: left;
+    vertical-align: middle;
+    top: 0;
+    position: relative;
+}
+    
+    .review-tags {
+    width: 100%;
+    float: left;
+}
+    
+    .inner-video-section {
+    BACKGROUND: #F8F4F1;
+    margin-bottom: 30px;
+      width: 100%;}
+    
+    .inner-highlighted-review {
+    padding: 15px 0 25px;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    margin: 0 1.5%;
+    float: left;
+}
+    
+    .before-after-slider {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+    
+    .ing-index-list ul li {
+    width: 50%;
+}
+    
+    .ravel-comparision {
+    background: #fff;
+    padding: 40px 0px;
+}
+    
+    .ravel-features .feat-icon-text {
+      width: 100%;}
+    
+    .jdgm-all-reviews-widget, .jdgm-rev-widg {
+      padding: 24px 0 !important;}
+    
+    .hair-health h2 {
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+}
+    
+    .inner-wrapper-i p {
+    line-height: 1.2;
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+}
+  
+  }
+  
+  @media (max-width: 549px) {
+    .gridsticky { bottom: 67px; display: none; }
+  }
+  
+  @media only screen and (max-width:379px){
+  
+  .review-tags span {
+    padding: 9px 0px;
+    width: 30.95%;
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  
+  
+</style>
+
+<head>
+<script src="https://appbrew.pages.dev/web-sdk/appbrew-sdk.js"></script>
+</head>
+
+{%- assign custom_collection = collections['create-order'] -%}
+{%- for product in custom_collection.products -%}
+  {% if product.metafields.custom.see_ingredients_and_more != blank %}
+    <div class='product-ingredients-id' id='product-{{ product.id }}'>
+      {{ product.metafields.custom.see_ingredients_and_more }}
+    </div>
+  {% endif %}
+{% endfor %}
+
+
+<div class="custom-selection custom_new_quiz">
+
+  <script>
+window._Sendlane = window._Sendlane || [];
+_Sendlane.push({
+    event_id: '6dcr3Wy0Kuxt8'
+});
+</script>
+<script src="https://sendlane.com/scripts/pusher.js" async></script>
+  
+  <div class="progress-bar">
+    <div class="progress-bar-i jsProgress"></div>
+  </div>
+  <div class="page-width">
+    <div class="selection-nav selection_nav">
+      <a href="#" class="btn-nav btnPrev jsBtnNav hide" data-target="1"><span class="icn">{%- render 'icon-left-arrow' -%}</span><span class="txt">Back</span></a>
+    </div>
+    <div class="selection-inner">
+       <div class="selection-slide slide-1 color-slide manualChange inputRequired que-slide active-slide init-slide" data-index="1">
+        <h2>What name do you <br>prefer?</h2>
+        <div class="pro_image">
+          <img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/bottle2.png?v=1706608410">
+          <span class="bottle_name">You</span>
+        </div>
+        <div class="selection-desc selection-head" data="Name on kit">
+          <div class='error_show' style="display: none !important;">Please fill name</div>
+          <input type="text" class="selection-input jsInput jsInputRequired  cnamevalue" maxlength="10" data-label="Name" placeholder="Only Upto 10 characters">
+        </div>
+        <div class="short_description">
+          <p>We ask so we can presonalize this experience (and custom bottle!) for you.</p>
+        </div>
+
+        <button type="button" class="Next-slide-btn btn btn-inactive">Next</button>
+      </div>
+      
+      <div class="selection-slide slide-2 radio_Required slideChoices que-slide" data-index="2" data-total-choices="3">
+        <div class="selection-content">
+          <h3>What is your natural <br>hair type?</h3>
+          <p>Your hair when untreated or unstyled</p>
+        </div>
+        <div class="selection-choices multiple_slideChoices radio-wrap" data-label="Hair Type">
+          <div class="selection-choice jsRadio" data="Straight">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/1.svg?v=1706598884">{% endcomment %}{% render 'straight_hair' %}</div>
+            <div class="choice-label">Straight</div>
+            <div class="choice-desc">no bend or curl</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Wavy">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/2.svg?v=1706598886">{% endcomment %}{% render 'wavy_hair' %}</div>
+            <div class="choice-label">Wavy</div>
+            <div class="choice-desc">like a loose S</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Curly">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/3.svg?v=1706598885">{% endcomment %}{% render 'Curly_hair' %}</div>
+            <div class="choice-label">Curly</div>
+            <div class="choice-desc">defined curl/spiral</div>
+          </div>
+        </div>
+        <div class="selection-content">
+          <h3>What’s your hair structure?</h3>
+          <p>What does a single strand of hair feel like?</p>
+        </div>
+        <div class="selection-choices multiple_slideChoices radio-wrap" data-label="Hair Structure">
+          <div class="selection-choice jsRadio" data="Fine">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/5.svg?v=1706599236">{% endcomment %}{% render 'fine_hair' %}</div>
+            <div class="choice-label">Fine</div>
+            <div class="choice-desc">thinner than thread</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Medium">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/6.svg?v=1706599236">{% endcomment %}{% render 'medium_hair' %}</div>
+            <div class="choice-label">Medium</div>
+            <div class="choice-desc">as thick as thread</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Coarse">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/7.svg?v=1706599236">{% endcomment %}{% render 'coarse_hair' %}</div>
+            <div class="choice-label">Coarse</div>
+            <div class="choice-desc">thicker than thread</div>
+          </div>
+        </div>
+        <div class="selection-content">
+          <h3>What’s your scalp moisture?</h3>
+          <p>Your scalp/roots the day after washing</p>
+        </div>
+        <div class="selection-choices multiple_slideChoices radio-wrap" data-label="Scalp Moisture">
+          <div class="selection-choice jsRadio" data="Dry">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/8.svg?v=1706599177">{% endcomment %}{% render 'dry_hair' %}</div>
+            <div class="choice-label">Dry</div>
+            <div class="choice-desc">scalp is itchy or flaky</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Balanced">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/9.svg?v=1706599177">{% endcomment %}{% render 'Balanced_hair' %}</div>
+            <div class="choice-label">Balanced</div>
+            <div class="choice-desc">hair is not dry or oily</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Oily">
+            <div class="choice-img">{% comment %}<img src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/10.svg?v=1706599177">{% endcomment %}{% render 'oily_hair' %}</div>
+            <div class="choice-label">Oily</div>
+            <div class="choice-desc">roots are flat or greasy</div>
+          </div>
+        </div>
+            <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">CONFUSED?</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>Sometimes it’s tough to decide, and many people have more than 1 texture on their heads. When in doubt, pick the texture that looks like the majority of your hair, the majority of the time.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE x</span>
+              </div>
+            </div>
+          </div>
+      </div>
+     <div class="selection-slide slide-3 slideChoices que-slide selection-goals" data-index="3">
+        <div class="selection-content">
+          <h3>What are your hair goals?</h3>
+          <p>Choose up to 5 hair goals, but remember, as seasons or your aspirations shift, you can always reformulate!</p>
+        </div>
+        <div class="selection-choices checkbx-wrap selection-inline jsGoals" data-label="5 goals"></div>
+        <div class="selection-desc jsContent hide">
+          <h4 class="jsTitle"></h4>
+          <p class="selection-text jsDesc"></p>
+          <p style="display: none !important"><label>Key Ingredients:</label><span class="jsKeys"></span></p>
+        </div>
+        <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+          <div class="quiz-ask">
+            <p class="opt-text">WHY WE ASK:</p>
+            <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+          </div>
+          <div class="quiz-drawer-content">
+            <div class="quiz-drawer-content-text">
+              <div class="quiz-drawer-text">
+                <p>This gives us an idea on what needs to be worked on and accordingly actives will be added to target particular concerns. Choose upto 5 goals.</p>
+              </div>
+            </div>
+            <div class="quiz-drawer-close">
+              <span>CLOSE x</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="selection-slide slide-4 focus_goal slideChoices que-slide selection-goals" data-index="4">
+        <div class="selection-content">
+          <h3>Which goal should <br>we focus on?</h3>
+          <p>Choose one goal that's the most important to you!</p>
+        </div>
+        <div class="selection-choices checkbx-wrap selection-inline jsSelectGoals" data-label="Focus on"></div>
+        <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+          <div class="quiz-ask">
+            <p class="opt-text">WHY WE ASK?</p>
+            <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+          </div>
+          <div class="quiz-drawer-content">
+            <div class="quiz-drawer-content-text">
+              <div class="quiz-drawer-text">
+                <p>This helps us narrow down our focus on what's the major concern currently among the selected goals and accordingly our team can modify the intensity of actives used for each concern.</p>
+              </div>
+            </div>
+            <div class="quiz-drawer-close">
+              <span>CLOSE x</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selection-slide slide-5 slideChoices que-slide" data-index="5">
+        <div class="selection-content">
+          <h3>Do you have a sensitive <br>scalp?</h3>
+          <p>If you experience tightness, dryness, burning, tingling, pain, itching, or redness, all that counts as sensitivity.</p>
+        </div>
+        <div class="selection-choices radio-wrap" data-label="Scalp Type?">
+          <div class="selection-choice jsRadio label-only" data="Not at all">
+            <div class="choice-label">Not at all</div>
+          </div>
+          <div class="selection-choice jsRadio label-only" data="Sometimes yes">
+            <div class="choice-label">Sometimes yes</div>
+          </div>
+          <div class="selection-choice jsRadio label-only" data="Slightly Tight & Itchy">
+            <div class="choice-label">Slightly Tight & Itchy</div>
+          </div>
+          <div class="selection-choice jsRadio label-only" data="It’s ridiculously sensitive">
+            <div class="choice-label">It’s ridiculously sensitive</div>
+          </div>
+        </div>
+        <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">DID YOU KNOW?</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>Some sensitivity is caused by things like chemical treatments, chlorine, or hard water, and can be significantly improved with the right haircare. Some causes are more hormonal or medical, and require lifestyle changes or medication, but our custom formulas can still give you partial relief in the meantime. If you’re at all sensitive, choose our fragrance-free option at the end of this quiz.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE x</span>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="selection-slide slide-6 slideChoices que-slide" data-index="6">
+        <div class="selection-content">
+          <h3>Do you color or treat <br>your hair?</h3>
+          <p>If you experience tightness, dryness, burning, tingling, pain, itching, or redness, all that counts as sensitivity.</p>
+        </div>
+        <div class="selection-choices radio-wrap" data-label="Color or treat hair?">
+          <div class="selection-choice jsRadio label-only" data="None">
+            <div class="choice-label">None</div>
+          </div>
+          <div class="selection-choice jsRadio label-only" data="Hair coloring">
+            <div class="choice-label">Hair coloring</div>
+          </div>
+          <div class="selection-choice jsRadio label-only" data="Straightening / Smoothening">
+            <div class="choice-label">Straightening / Smoothening</div>
+          </div>
+          <div class="selection-choice jsRadio label-only" data="Keratin treatment">
+            <div class="choice-label">Keratin treatment</div>
+          </div>
+        </div>
+        <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">WHY WE ASK:</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                  <p>Since these treatments are more prone to causing damage, we need to know how often you’re exposed to them so we can give you the right level or reparative support.</p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE x</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="selection-slide slide-7 radio_Required slideChoices custom_swatches que-slide" data-index="7" data-total-choices="3">
+        <div class="selection-content">
+          <h3>Choose Your Gender</h3>
+        </div>
+        <div class="selection-choices multiple_slideChoices radio-wrap" data-label="Gender">
+          <div class="selection-choice jsRadio" data="Male">
+            <div class="choice-label">Male</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Female">
+            <div class="choice-label">Female</div>
+          </div>
+        </div>
+        <div class="selection-content">
+          <h3>Select Your Age</h3>
+        </div>
+        <div class="selection-choices multiple_slideChoices radio-wrap" data-label="Age">
+          <div class="selection-choice jsRadio" data="Under 20">
+            <div class="choice-label">Under 20</div>
+          </div>
+          <div class="selection-choice jsRadio" data="20-30">
+            <div class="choice-label">20-30</div>
+          </div>
+          <div class="selection-choice jsRadio" data="30-40">
+            <div class="choice-label">30-40</div>
+          </div>
+          <div class="selection-choice jsRadio" data="40-50">
+            <div class="choice-label">40-50</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Above 50">
+            <div class="choice-label">Above 50</div>
+          </div>
+        </div>
+        <div class="selection-content">
+          <h3>How often do you <br>experience stress?</h3>
+        </div>
+        <div class="selection-choices multiple_slideChoices radio-wrap" data-label="How often do you experience stress?">
+          <div class="selection-choice jsRadio" data="Rarely">
+            <div class="choice-label">Rarely</div>
+          </div>
+          <div class="selection-choice jsRadio" data="A few instances">
+            <div class="choice-label">A few instances</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Multiple times a week">
+            <div class="choice-label">Multiple times a week</div>
+          </div>
+          <div class="selection-choice jsRadio" data="Everyday">
+            <div class="choice-label">Everyday</div>
+          </div>
+        </div>
+            <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+            <div class="quiz-ask">
+              <p class="opt-text">CONFUSED?</p>
+              <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+            </div>
+            <div class="quiz-drawer-content">
+              <div class="quiz-drawer-content-text">
+                <div class="quiz-drawer-text">
+                    <p><b>GENDER: </b>Haircare requirements change for different genders. This helps us tweak the formulas so that we can give you the best possible foundation for healthy hair.
+                        <br><b>AGE: </b>Over the course of a lifetime, hair goes through changes in texture, density, and strength. We’ll use this info to give you extra support at any stage.
+                        <br><b>STRESS: </b>Emotional stress can weaken hair, so be honest about your feelings. We’ll create products that give your hair the strength and resilience it needs on good days and bad. </p>
+                </div>
+              </div>
+              <div class="quiz-drawer-close">
+                <span>CLOSE x</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="selection-slide slide-8 manualChange que-slide" data-index="8">
+        <div class="selection-content">
+          <h3>Anything else we <br>should know?</h3>
+          <p></p>
+        </div>
+        <div class="selection-inputs">
+          <textarea rows="10" class="selection-input jsInput" data-label="Anything else we should know about you?" placeholder="Type text here"></textarea>
+        </div>
+        <button type="button" class="Next-slide-btn btn btn-inactive">Next</button>
+      </div>
+
+      <div class="selection-slide slide-9 choice_color_pro_list que-slide color-slide" data-index="9">
+      <div class="selection-content">
+        <h3>Choose Your Color & <br>Fragrance</h3>
+      </div>
+      <div class="selection-choices radio-wrap js_selections_add" data-label="Select your color & fragrance">  
+        <div class="selection-choice jsRadio hair-care-color color-box js_image_change_meta" img-color='img-pink' data="Pink (Cherry Blossom 🍒)">
+          <div class="selected-color-img">
+            <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Pink.png?v=1665066497" data="Pink (Cherry Blossom 🍒)">
+          </div>
+          <div class="image_info">
+            <div class="choice-label">Pink (Cherry Blossom 🍒)</div>
+            <p>Smells of a freshly arrange bouquet in Pink Colored Shampoo & Conditioner</p>
+          </div>
+        </div>
+        <div class="selection-choice jsRadio hair-care-color color-box js_image_change_meta" img-color='img-purple' data="Purple (Lavender 🌸)">
+          <div class="selected-color-img">
+            <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Purple.png?v=1665066497" data="Purple (Lavender 🌸)">
+          </div>
+          <div class="image_info">
+            <div class="choice-label">Purple (Lavender 🌸)</div>
+            <p>Warm & Cozy Smell of Fresh lavender in Purple Colored Shampoo & Conditioner</p>
+          </div>
+        </div>
+        <div class="selection-choice jsRadio hair-care-color color-box js_image_change_meta" img-color='img-blue' data="Blue (Eucalyptus 🌿)">
+          <div class="selected-color-img">
+            <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Blue_01fd0195-449b-4ba9-a1a9-1fe665713c9d.png?v=1665066497" data="Blue (Eucalyptus 🌿)">
+          </div>
+          <div class="image_info">
+            <div class="choice-label">Blue (Eucalyptus 🌿)</div>
+            <p>A breath of fresh air & blend of earthiness in Blue Colored Shampoo & Conditioner</p>
+          </div>
+        </div>
+        <div class="selection-choice jsRadio hair-care-color color-box js_image_change_meta" img-color='img-dye' data="Dye Free (Fragrance Free)">
+          <div class="selected-color-img">
+            <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Dye_Free_37b3c596-2bc9-4086-9333-cdc48ecb143e.png?v=1665066497" data="Dye Free (Fragrance Free)">
+          </div>
+          <div class="image_info">
+            <div class="choice-label">Dye Free (Fragrance Free)</div>
+            <p>Freshly made Shampoo & Conditioner with no Fragrance & Dyes used. </p>
+          </div>
+        </div>
+      </div>
+      {% comment %}<div class="selected-color-img">
+        <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Blue_01fd0195-449b-4ba9-a1a9-1fe665713c9d.png?v=1665066497" data="Blue (Eucalyptus 🌿)">
+        <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Pink.png?v=1665066497" data="Pink (Cherry Blossom 🍒)">
+        <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Purple.png?v=1665066497" data="Purple (Lavender 🌸)">
+        <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Dye_Free_37b3c596-2bc9-4086-9333-cdc48ecb143e.png?v=1665066497" data="Dye Free (Fragrance Free)">
+      </div>{% endcomment %}
+      <div class="quiz-drawer-ask why_ask quiz-height-ask" bottomoffset="1">
+          <div class="quiz-ask">
+            <p class="opt-text">NEED HELP DECIDING?</p>
+            <span class="up-arrow"> <img src='https://cdn.shopify.com/s/files/1/0256/1071/5182/files/icons8-double-down-64.svg?v=1657619268'></span>
+          </div>
+          <div class="quiz-drawer-content">
+            <div class="quiz-drawer-content-text">
+              <div class="quiz-drawer-text">
+                <p>We asked members of our team to describe our fragrances. Here’s what they had to say:<br></br>
+                <b>Lavender:</b> Fresh Lavender but also smells warm and cozy. (Intense)<br></br> 
+              <b>Cherry Blossom:</b> A freshly arranged bouquet with a hint of sweetness. (Mild)<br></br>
+              <b>Eucalyptus:</b> A breath of fresh air & delightful blend of earthiness (Mild)<br></br>
+              <b>Fragrance Free:</b> No added fragrance or masking agents. <br></br></p>
+              </div>
+            </div>
+            <div class="quiz-drawer-close">
+              <span>CLOSE x</span>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="selection-slide slide-10 manualChange klaviyo_slide" data-index="10">
+      <div class="selection-content">
+        <h4 class="form-title">Enter your email to view your custom haircare regimen</h4>
+      </div>
+      <form action="https://sendlane.com/form-api/submission/eyJkb21haW4iOiJyYXZlbGNhcmUiLCJmb3JtX2lkIjoiYThlYzE1N2MtYmM3OC00ZDFiLWEyMTYtNTE0M2FhMjcyNmVhIn0=" method="post"><input name="1" placeholder="First name" type="Text"><input name="3" placeholder="Email" type="Email" required="required"><button type="submit" class="custom_form_submit"> submit</button><img src="https://sendlane.com/form-api/impression/eyJkb21haW4iOiJyYXZlbGNhcmUiLCJmb3JtX2lkIjoiYThlYzE1N2MtYmM3OC00ZDFiLWEyMTYtNTE0M2FhMjcyNmVhIn0=" style="display: none;"></form>
+      {% comment %}<div id="omnisend-embedded-v2-6431b1bca91b11294b40f4be"></div>{% endcomment %}
+      <button type="button" class="Next-slide-btn btn btn-inactive">Next</button>
+    </div>
+
+    <div class="selection-slide slide-11 quiz-drawer-none loaderSlide" data-index="11">
+      <div class="selection-loader">
+        <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/PERSONALIZING_YOUR_PRODUCTS.......gif?v=1642670511">
+      </div>
+      {% comment %}<p class="lodding_message">Your custom haircare regimen is loading!</p>{% endcomment %}
+    </div>
+      
+      <div class="selection-slide add_header quiz-drawer-none slide-12 finalSlide" data-index="12">
+        <div class="selection-content product_section_name" id='nav_details_section'>
+          <h3 id="select-pro">Select Your Custom Made Products</h3>
+          {%- assign collection = collections['create-order'] -%}
+          
+          <script type="application/json" id="productImgJSON">
+          {
+            {%- for product in collection.products -%}
+            "{{ product.handle }}": {
+              {%- for image in product.images -%}
+                "{{ image.alt }}": "{{ image | img_url: 'compact' }}"{%- unless forloop.last -%},{%- endunless -%}
+              {%- endfor -%}
+            }{%- unless forloop.last -%},{%- endunless -%}
+            {%- endfor -%}
+          }
+          </script>
+            
+          <div class="selection-products">
+            {%- for product in collection.products -%}
+              {%- unless product.available -%}{%- continue -%}{%- endunless -%}
+            
+              {%- comment -%}{%- if forloop.index == 2 -%}<div class="selection-products-group">{%- endif -%}
+              {%- assign current_variant = product.variants[1] | default: product.selected_or_first_available_variant -%} {%- endcomment -%}
+              {%- assign current_variant = product.selected_or_first_available_variant -%} 
+              <div class="selection-product selction-p-set r_pb selection_prdct jsSelectProduct" data="{{ product.handle }}">
+                <div class="floating-tick-selected"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"> <polygon points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "/> </svg></div>
+                
+                {% if product.tags contains 'best-selling-product' %}
+            <a href="#" class="bst-seller best_seller_set bg_red">{% comment %} <i class="w-star"></i>{% endcomment %} BEST SELLER </a>
+            {% endif %}
+                {% if product.tags contains 'super-saver' %}
+            <a href="#" class="bst-seller best_seller_set bg_blue"> Super Saver </a>
+            {% endif %}
+                <div class="sel-pr-row1 pr-row">{%- comment -%}CD*{%- endcomment -%}
+                  {%- if product.featured_image -%}
+                   {% if product.metafields.custom.blue %} {% assign blue = product.metafields.custom.blue | img_url: 'grande' %} {% endif %}
+                   {% if product.metafields.custom.pink %} {% assign pink = product.metafields.custom.pink | img_url: 'grande' %} {% endif %}
+                   {% if product.metafields.custom.purple %} {% assign purple = product.metafields.custom.purple | img_url: 'grande' %} {% endif %}
+                   {% if product.metafields.custom.dyes %} {% assign dye = product.metafields.custom.dyes | img_url: 'grande' %} {% endif %}
+                    <div class="sel-pr-img sel-img-w">
+                      <a href="#" class='sel-product-img-a'>
+                        <img class='sel-product-img js_product_img_add' img-color img-pink='{{ pink }}' img-purple='{{ purple }}' img-dye='{{ dye }}' img-blue='{{ blue }}' default-url='{{ product.featured_image | img_url: 'grande' }}' src="{{ product.featured_image | img_url: 'grande' }}">
+                      </a>
+                      
+                      {% if product.metafields.custom.review_text != blank %}
+                        <div class='quiz_reviews_product'>★ ★ ★ ★ ★ <span class='meta_review_text'> {{ product.metafields.custom.review_text }} </span> </div>
+                    {% endif %}
+                   
+                    {% if product.metafields.custom.short_text != blank %}
+                       <p class="short_text_meta">{{ product.metafields.custom.short_text }}</p>
+                    {% endif %}
+                    </div>
+                  {%- endif -%}
+                  {% comment %} <div class="sel-pr-details sel-img-w">
+                    <a href="{{ product.url }}"><h4 class="sel-pr-title">{{ product.title }}</h4></a>
+                   {%- for tag in product.tags -%}
+                      {%- if tag contains 'ml_' -%}
+                        <p class="sel-pr-opt sel-pr-title">{{ tag | replace: 'ml_','' }}</p>
+                        {%- break -%}
+                      {%- endif -%}
+                    {%- if tag contains 'ml1_' -%}
+                        <p class="sel-pr-opt sel-pr-title">{{ tag | replace: 'ml1_','Cover for shipping and handling' }}</p>
+                        {%- break -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+              {% endcomment %}
+              {% comment %}{% if product.metafields.custom.see_ingredients_and_more != blank %}
+                 <p class="short_text_meta txt-popup txt-popup-open f-size" data-id='product-{{ product.id }}'> See ingredients and more</p>
+              {% endif %}{% endcomment %}
+                </div>
+                {% comment %}{%- if product.description != blank -%}
+                  <div class="sel-pr-row2">
+                    <p>{{ product.description | strip_html |  truncate: 85 }}</p>
+                  </div>
+                {%- endif -%}{% endcomment %}
+                <div class="sel-pr-row3">
+                {% comment %}<span class="offer_bar">MONSOON SALE - <span style="color: red;">62% OFF + FREE GIFT</span></span> {% endcomment %}
+                  <div class="sel-pr-details sel-img-w">
+                    <a href="{{ product.url }}"><h4 class="sel-pr-title">{{ product.title }}</h4></a>
+                    <div class="offer_message-with-btn">
+                      {% if product.metafields.custom.offer_message != blank %}
+                        <span>{{ product.metafields.custom.offer_message }}</span>
+                      {% endif %}
+                      <div class="popup_btn">
+                        {% if product.metafields.custom.see_ingredients_and_more != blank %}
+                           <p class="short_text_meta txt-popup txt-popup-open f-size" data-id='product-{{ product.id }}'> View Ingredients</p>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                  {%- unless product.has_only_default_variant -%}
+                    <div class="variant-picker var_picker" style="display: none !important;">
+                      {% comment %}
+                      <div class="variant-toggle var_toggle variant-t-margin">
+                        <span class="label">Your plan:</span>
+                        <span class="value var_name">{{ current_variant.title }}</span>
+                        <span class="action"><span class="txt">Change</span><span class="arrow">{%- render 'icon-down-arrow' -%}</span></span>
+                        <span class="discount-text di-text-up"><span>Save upto 40% with longer plans</span></span>
+                      </div>{% endcomment %}
+                      <div class="custom_variant-list">
+                        {% comment %}
+                        <div class="list-header">
+                          <div class="text">
+                            <h3>Choose your plan</h3>
+                            <p>We recommend to use the product for atleast 7-8 weeks to notice significant difference</p>
+                          </div>
+                          <button class="btn-close btn_close_var"><span class="close-icon">{%- render 'icon-close' -%}</span></button>
+                        </div>{% endcomment %}
+                        <div class="custom_variant_label">Select Combo:</div>
+                        <div class="list-body">
+                          {%- for variant in product.variants -%}
+                            <div class="list-row{% if variant == current_variant %} active{% endif %} var_opt" data="{{ variant.id }}">
+                             {% comment %} {%- if forloop.first -%}<div class="border-text"><span>Most Popular</span></div>{%- endif -%} 
+                            <div class="list-row{% if forloop.index == 2 or product.variants.size == 1 %} active{% endif %} var_opt" data="{{ variant.id }}">
+                              {%- if forloop.index == 2 or product.variants.size == 1 -%}<div class="border-text"><span>Most Popular</span></div>{%- endif -%}{% endcomment %}
+                              <div class="list-variant">
+                                <span class="var-radio">
+                                  <span class="radio"><span class="radio-i"></span></span>
+                                </span>
+                                <span class="var-title">{{ variant.title }}</span>
+                                {%- assign variant_price = variant.price | divided_by: forloop.index -%}
+                                <span class="var-pricing" style="display: none !important;">
+                                  {%- if variant.compare_at_price > variant.price -%}
+                                    <span class="compare-at-price" data-compare-price="{{ variant.compare_at_price }}">{{ variant.compare_at_price | money }}</span>
+                                  {%- endif -%}
+                                  <span class="price-wrap">
+                                    <span class="price" data-price="{{ variant.price }}">{{ variant_price | money }}</span>
+                                    <span class="subtext">per set</span>
+                                  </span>
+                                </span>
+                              </div>
+                              {%- if variant.compare_at_price > variant.price -%}
+                                <span class="var-discount">Save {{ variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | money_without_currency | times: 100 | remove: '.0'}}%</span>
+                              {%- endif -%}
+                            </div>
+                          {%- endfor -%}
+                        </div>
+                      </div>
+                    </div>
+                  {%- endunless -%}
+
+                  {% comment %}<div class="popup_btn">
+                    {% if product.metafields.custom.see_ingredients_and_more != blank %}
+                       <p class="short_text_meta txt-popup txt-popup-open f-size" data-id='product-{{ product.id }}'> SEE FULL INGREDIENTS</p>
+                    {% endif %}
+                  </div>{% endcomment %}
+                  <div class="price_with_action_btn">
+                    <div class="sel-pr-prices sel-p-prices">
+                      <div class="pricing-row">                  
+                         {% comment %}   <label>Total:</label> {% endcomment %}
+  
+                        <div class="custom-pricing custom-p">
+                          <span class="sel-pr-c-price prod_c_price{% unless current_variant.compare_at_price > current_variant.price %} hide{% endunless %}">MRP: <span class="pro_com_price">{{ current_variant.compare_at_price | money_without_currency | remove: '.00' }}</span></span>
+                          <span class="sel-pr-price prod_price">Offer Price: <span class="pro_price">{{ current_variant.price  | money_without_currency | remove: '.00'}}</span></span>
+                        </div>
+                        {% assign total_off = 0 %}
+                        {% if current_variant.compare_at_price > current_variant.price %}
+                          {% assign total_off = current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price | round %}
+                        {% endif %}
+                        <div class="price_off{% if total_off == 0 %} hide{% endif %}">
+                          <span class="off_price">{{ total_off }}%</span>
+                          OFF
+                        </div>
+                      </div>
+                      
+                        {% assign prepaid-orders = current_variant.price | times: 5 | divided_by: 100 | money_without_currency | round %}
+                        {% if prepaid-orders >= 75 %}
+                          {% assign prepaid-orders = 75 %}
+                        {% endif %}
+                        {% assign inc_prepaid-orders = prepaid-orders | times: 100 %}
+                        <span class="cust_text">Get at <b>{{ current_variant.price | minus: inc_prepaid-orders | money | remove: '.00' }}</b> for prepaid orders</span>
+                      
+                      {% comment %}<div class="save-price add_margin_set prod_save_percent{% unless current_variant.compare_at_price > current_variant.price %} hide{% endunless %}">
+                        <span class="money_sale_percent">Save {{ current_variant.compare_at_price | minus: current_variant.price | money_without_currency| remove: '.00'}}/-</span>
+                      </div>{% endcomment %}
+                      
+                    </div>
+
+                   {% comment %}
+                    {% unless product.has_only_default_variant %}
+                    <select class="pro_variant_list">
+                      <option value="" selected disabled>Select Combo</option>
+                      {% for variant in product.variants %}
+
+                        {% assign var_prepaid-orders = variant.price | times: 5 | divided_by: 100 | money_without_currency | round %}
+                        {% if var_prepaid-orders >= 75 %}
+                          {% assign var_prepaid-orders = 75 %}
+                        {% endif %}
+                        {% assign var_inc_prepaid-orders = var_prepaid-orders | times: 100 %}
+                        
+                        <option value="{{ variant.id }}" data-price="{{ variant.price }}||{{ variant.price | money_without_currency | remove: '.00' }}" data-comp-price="{{ variant.compare_at_price }}||{{ variant.compare_at_price | money_without_currency | remove: '.00' }}" data-order="{{ variant.price | minus: var_inc_prepaid-orders | money | remove: '.00' }}">{{ variant.title }}</option>
+                      {% endfor %}
+                    </select>
+                    {% endunless %}
+                    {% endcomment %}
+                    
+                    {%- comment -%}
+                     {% if product.tags contains 'free-ship' %}
+                    <div class="free-ship">
+  					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g transform="translate(1 1)"> <g> <g> <path d="M186.733,391.533c-9.387,0-17.067,7.68-17.067,17.067s7.68,17.067,17.067,17.067s17.067-7.68,17.067-17.067 S196.12,391.533,186.733,391.533z"/> <path d="M408.6,391.533c-9.387,0-17.067,7.68-17.067,17.067s7.68,17.067,17.067,17.067s17.067-7.68,17.067-17.067 S417.987,391.533,408.6,391.533z"/> <path d="M383,331.8h-17.067c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533H383c5.12,0,8.533-3.413,8.533-8.533 S388.12,331.8,383,331.8z"/> <path d="M255,246.467H135.533c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533H255c5.12,0,8.533-3.413,8.533-8.533 S260.12,246.467,255,246.467z"/> <path d="M139.8,102.253c-4.267-2.56-9.387-1.707-11.947,2.56L82.627,173.08l-26.453-26.453c-3.413-3.413-8.533-3.413-11.947,0 s-3.413,8.533,0,11.947l34.133,34.133c1.707,1.707,3.413,2.56,5.973,2.56c3.413,0,5.973-1.707,6.827-4.267l51.2-76.8 C144.92,109.933,144.067,104.813,139.8,102.253z"/> <path d="M499.907,313.88l-33.28-13.653l-21.333-85.333c-2.56-11.947-12.8-19.627-24.747-19.627h-80.213v-25.6 c0-9.387-7.68-17.067-17.067-17.067H186.348c0.25-2.81,0.385-5.655,0.385-8.533c0-52.053-41.813-93.867-93.867-93.867 C40.813,50.2-1,92.013-1,144.067c0,49.175,37.319,89.204,85.333,93.481v60.119v102.4c0,9.387,7.68,17.067,17.067,17.067h34.863 c4.095,24.134,25.217,42.667,50.47,42.667s46.375-18.533,50.47-42.667H358.13c4.095,24.134,25.217,42.667,50.47,42.667 c25.253,0,46.375-18.533,50.47-42.667h34.863c9.387,0,17.067-7.68,17.067-17.067v-69.973 C511,322.413,506.733,316.44,499.907,313.88z M323.267,203.8v8.533c0,42.667-34.133,76.8-76.8,76.8H101.4v-51.2 c7.334-0.815,14.48-2.445,21.316-4.802c13.123-4.362,24.935-11.528,34.735-20.798h114.616c5.12,0,8.533-3.413,8.533-8.533 s-3.413-8.533-8.533-8.533H171.794c5.064-7.748,8.999-16.334,11.526-25.6h139.947V203.8z M16.067,144.067 c0-42.667,34.133-76.8,76.8-76.8c42.667,0,76.8,34.133,76.8,76.8c0,4.703-0.438,9.294-1.233,13.756 c-0.199,0.504-0.361,1.038-0.474,1.604c-1.825,9.581-5.432,18.419-10.419,26.243c-0.283,0.442-0.555,0.891-0.847,1.326 c-0.153,0.229-0.317,0.45-0.472,0.678c-0.538,0.783-1.082,1.562-1.648,2.323c-0.112,0.151-0.229,0.299-0.343,0.449 c-0.619,0.821-1.251,1.631-1.902,2.425c-0.105,0.129-0.213,0.256-0.32,0.384c-0.666,0.802-1.348,1.591-2.046,2.364 c-0.11,0.122-0.221,0.244-0.333,0.366c-0.022,0.024-0.045,0.046-0.066,0.07c-1.769,0.79-3.112,2.145-3.887,3.926 c-0.278,0.262-0.548,0.533-0.83,0.791c-0.114,0.104-0.225,0.212-0.339,0.315c-0.821,0.743-1.66,1.467-2.513,2.174 c-0.07,0.057-0.136,0.118-0.206,0.175c-0.909,0.748-1.837,1.475-2.781,2.181c-0.333,0.248-0.676,0.482-1.013,0.725 c-0.57,0.412-1.141,0.825-1.723,1.222c-0.57,0.387-1.151,0.759-1.732,1.131c-0.355,0.228-0.708,0.459-1.067,0.682 c-0.668,0.413-1.345,0.812-2.026,1.204c-0.272,0.157-0.544,0.314-0.818,0.468c-0.747,0.418-1.501,0.825-2.263,1.219 c-0.198,0.103-0.397,0.203-0.597,0.304c-0.833,0.421-1.673,0.832-2.523,1.224c-0.087,0.04-0.175,0.078-0.262,0.118 c-4.708,2.147-9.666,3.826-14.806,4.999c-0.274,0.062-0.547,0.129-0.823,0.188c-0.77,0.167-1.547,0.316-2.325,0.46 c-0.43,0.079-0.861,0.157-1.293,0.229c-0.689,0.115-1.38,0.221-2.074,0.318c-0.557,0.077-1.117,0.146-1.678,0.211 c-0.606,0.071-1.212,0.142-1.822,0.199c-0.72,0.067-1.445,0.116-2.17,0.163c-0.477,0.031-0.952,0.071-1.432,0.094 c-1.225,0.057-2.456,0.092-3.696,0.092C50.2,220.867,16.067,186.733,16.067,144.067z M186.733,442.733 c-18.773,0-34.133-15.36-34.133-34.133c0-18.773,15.36-34.133,34.133-34.133c18.773,0,34.133,15.36,34.133,34.133 C220.867,427.373,205.507,442.733,186.733,442.733z M408.6,442.733c-18.773,0-34.133-15.36-34.133-34.133 c0-18.773,15.36-34.133,34.133-34.133c18.773,0,34.133,15.36,34.133,34.133C442.733,427.373,427.373,442.733,408.6,442.733z M493.933,400.067H459.07c-2.881-16.98-14.192-31.177-29.444-38.106c-0.338-0.155-0.674-0.314-1.017-0.462 c-0.214-0.092-0.432-0.175-0.648-0.264c-0.553-0.229-1.109-0.453-1.672-0.662c-0.152-0.056-0.306-0.108-0.459-0.163 c-0.625-0.226-1.256-0.442-1.893-0.644c-0.138-0.044-0.276-0.085-0.415-0.127c-0.648-0.199-1.302-0.387-1.962-0.56 c-0.146-0.038-0.292-0.076-0.439-0.113c-0.648-0.164-1.301-0.316-1.96-0.455c-0.166-0.035-0.331-0.071-0.497-0.104 c-0.636-0.128-1.277-0.242-1.922-0.346c-0.191-0.031-0.381-0.064-0.573-0.093c-0.621-0.093-1.248-0.17-1.877-0.24 c-0.213-0.024-0.425-0.052-0.639-0.074c-0.629-0.062-1.263-0.107-1.899-0.146c-0.21-0.013-0.417-0.033-0.628-0.043 c-0.837-0.041-1.68-0.065-2.529-0.065c-0.849,0-1.692,0.024-2.529,0.065c-0.21,0.01-0.418,0.03-0.628,0.043 c-0.636,0.039-1.27,0.084-1.899,0.146c-0.214,0.021-0.426,0.05-0.639,0.074c-0.629,0.07-1.256,0.148-1.877,0.24 c-0.192,0.029-0.382,0.062-0.574,0.093c-0.645,0.104-1.285,0.218-1.921,0.345c-0.167,0.034-0.332,0.069-0.498,0.104 c-0.658,0.139-1.311,0.291-1.959,0.455c-0.146,0.037-0.293,0.074-0.439,0.113c-0.66,0.174-1.314,0.361-1.962,0.561 c-0.138,0.042-0.276,0.083-0.414,0.127c-0.638,0.202-1.268,0.418-1.894,0.644c-0.152,0.055-0.305,0.107-0.457,0.163 c-0.564,0.21-1.121,0.434-1.675,0.664c-0.215,0.089-0.432,0.172-0.645,0.263c-0.343,0.148-0.68,0.308-1.019,0.463 c-15.25,6.93-26.561,21.126-29.441,38.105H237.203c-2.881-16.979-14.19-31.174-29.439-38.104 c-0.34-0.156-0.677-0.316-1.021-0.464c-0.213-0.091-0.43-0.174-0.645-0.263c-0.554-0.229-1.111-0.453-1.675-0.664 c-0.151-0.056-0.305-0.108-0.457-0.163c-0.626-0.226-1.257-0.442-1.894-0.644c-0.137-0.043-0.276-0.084-0.414-0.127 c-0.648-0.199-1.302-0.387-1.962-0.561c-0.146-0.038-0.292-0.076-0.439-0.113c-0.648-0.164-1.301-0.316-1.96-0.455 c-0.166-0.035-0.331-0.071-0.497-0.104c-0.636-0.128-1.277-0.242-1.922-0.346c-0.191-0.031-0.381-0.064-0.573-0.093 c-0.621-0.093-1.248-0.17-1.877-0.24c-0.213-0.024-0.425-0.052-0.639-0.074c-0.629-0.062-1.263-0.107-1.899-0.146 c-0.21-0.013-0.417-0.033-0.628-0.043c-0.837-0.041-1.68-0.065-2.529-0.065c-0.849,0-1.692,0.024-2.529,0.065 c-0.21,0.01-0.418,0.03-0.628,0.043c-0.636,0.039-1.27,0.084-1.899,0.146c-0.214,0.021-0.426,0.05-0.639,0.074 c-0.629,0.07-1.256,0.148-1.877,0.24c-0.192,0.029-0.382,0.062-0.573,0.093c-0.645,0.104-1.286,0.218-1.922,0.346 c-0.166,0.033-0.332,0.069-0.497,0.104c-0.659,0.139-1.312,0.291-1.96,0.455c-0.146,0.037-0.293,0.074-0.439,0.113 c-0.66,0.174-1.313,0.361-1.962,0.56c-0.138,0.042-0.277,0.083-0.415,0.127c-0.637,0.202-1.267,0.418-1.893,0.644 c-0.153,0.055-0.307,0.107-0.459,0.163c-0.563,0.21-1.119,0.433-1.672,0.662c-0.216,0.089-0.434,0.172-0.648,0.264 c-0.342,0.148-0.678,0.307-1.017,0.462c-15.252,6.929-26.563,21.126-29.444,38.106H101.4V306.2h145.067 c52.053,0,93.867-41.813,93.867-93.867h80.213c4.267,0,7.68,3.413,8.533,6.827l19.44,78.507h-62.96 c-5.973,0-11.093-5.12-11.093-11.093v-40.107c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533v40.107 c0,15.36,12.8,28.16,28.16,28.16h70.827l37.547,14.507V400.067z"/> </g> </g> </g> </svg>
+                      <span class="free-text-ship">FREE SHIPPING</span>				
+  				  </div>
+                    {% endif %}
+                    {%- endcomment -%}
+                    <div class="sel-pr-btn sel-p-btn">
+        <button
+  class="jsBtnAdd btn_css_add sel{{ current_variant.id }} _data_id"
+  data-id="{{ current_variant.id }}"
+  onclick="console.log('Clicked Add to Cart:', '{{ product.handle }}', 'gid://shopify/ProductVariant/{{ current_variant.id }}', 1); 
+           window.appbrewSDK.addToCart('{{ product.handle }}', 'gid://shopify/ProductVariant/{{ current_variant.id }}', 1);
+           setTimeout(function() { 
+             window.appbrewSDK.gotoLink({
+               kind: 'screen',
+               value: 'cart',
+             });
+           }, 0);">
+  
+  <span data="{{ current_variant.id }}" class="txt-add txt-add-up _data add{{ current_variant.id }}">Add to cart</span>
+  <span class="txt-added remove{{ current_variant.id }} _data" data="{{ current_variant.id }}">
+    <span data="{{ current_variant.id }}" class="txt-remove _data">remove</span>
+  </span>
+</button>
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {%- comment -%}{%- if forloop.index == 3 -%}</div>{%- endif -%}{%- endcomment -%}
+            {%- endfor -%}
+            
+            <style>
+
+</style>
+            
+             <div class="gridsticky">
+	<div class="col-1-2">
+		<div class="ripple-container ">
+			
+          <input type="hidden" class="selected_ids" />
+          <a href="#select-pro" class="btn anchortoaddpro">Add Product</a>
+        <a href="#" class="btn btnBuy hide">
+          <span class="txt-adding">Adding..</span>
+          <span class="txt-buy">Buy</span>
+        </a>
+          <div class="ripple"></div>
+		</div>
+	</div>
+</div>
+            
+            
+          </div>
+        </div>
+        <div class="sub-quiz-make">
+          {%- include 'quiz' -%}
+        </div>
+      </div>
+      
+      <div class="selection-footer sel-footer">
+        <div class="footer-inner footer-bar-set">
+          <div class="footer-info">
+            <div class="info-i">
+              <span class="curr_page">1</span> of <span class="total_pages"></span>
+            </div>
+          </div>
+          <div class="footer-action">  
+            <input type="hidden" class="selected_ids" />
+            <a href="#" class="btn btnNext btnBegin jsBtnNav allowToNext btn_begin btn-footer btn-inactive" data-target="2">Next</a>
+            <a href="#" class="btn-nav btnPrev jsBtnNav hide btn-back" data-target="1"><span class="icn">{%- render 'icon-left-arrow' -%}</span></a>
+            <a href="#" class="btn-nav btnNext jsBtnNav hide btn-footer" data-target="2">Next{%- comment -%}<span class="icn">{%- render 'icon-right-arrow' -%}</span>{%- endcomment -%}</a>
+            <a href="#" class="btn btnBuy hide btn-footer">
+              <span class="txt-adding">Adding..</span>
+              <span class="txt-buy">Buy</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      
+     
+      
+      
+      
+      
+      
+      
+       
+      <div class="final-page-s hide">
+      <div class="total-purchases">
+        
+        <div class="c-stars">
+   <div class="inner-main-star">      
+  <i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></div>
+          <h1>48,136+</h1>
+          <p>people have achieved their hair & scalp goals with Ravel.</p>
+        </div>
+        <div class="review-tags">
+          <div class="three-tags">
+            <span>Anti Aging</span>
+             <span>Anti Dandruff</span>
+             <span>Anti Frizz</span>
+          </div>
+          <div class="two-tags">
+             <span>Hydrate</span>
+             <span>Deep Condition</span>
+          </div>
+           <div class="three-tags">
+            <span>Curl definition</span>
+             <span>Volumize</span>
+             <span>Strengthen</span>
+          </div>
+          <div class="two-tags">
+             <span>Color Protection</span>
+             <span>Nourish Roots</span>
+          </div>
+           <div class="three-tags">
+            <span>Shine</span>
+             <span>Oil Control</span>
+             <span>Damage Repair</span>
+          </div>
+          <div class="two-tags">
+             <span>Anti Hairfall</span>
+             <span>UV Protection</span>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+      <div class="vid-reviews">
+        <p class="vid-main-head">Ravel delivers real customization and the highest satisfaction rating among all other brands</p>
+        <a href="#rev-sec" class="more-rev-btn">SEE MORE REVIEWS <i class="w-star"></i></a>
+
+        <h1>OUR RESULTS</h1>
+        <h5>SPEAK FOR THEMSELVES</h5>
+        <p class="review-description"><span class="smaller-star"><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><span class="t-rev">(34,000+ reviews)</span></p>
+        <p class="review-content">Our entire focus has been to create products which actually works for you, which gives you results while being easy on your pocket. Our product has shown results for 93.5% of our customers (Based on the survey we conducted between 12 February 2021 to 04 September 2022)</p>
+
+        <div class="promo-video-section product_section_name" id='nav_video_section'>
+          
+              <div class="inner-video-section">
+            <video width="100%" controls>
+              <source src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/10000000_246326903921914_3076759463712508381_n.mp4?v=1642624313#t=1" type="video/mp4">
+            </video>
+            <div class="video-content">
+              <div class="content-img">
+                <img src="https://www.asimhy.com/wp-content/themes/scroller/functions/images/bg.jpg" class="profile-img"></div><div class="rev-add-details"> <span class="promoter-name">Sana</span> <span class="med-star"><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></span></div>
+            </div>
+              <p>"I can't thank this product enough for the results!!"</p>
+          </div>
+          
+           <div class="inner-video-section">
+            <video width="100%" controls>
+              <source src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Hitakshi.mp4?v=1629455864#t=1" type="video/mp4">
+            </video>
+            <div class="video-content">
+              <div class="content-img">
+                <img src="https://www.asimhy.com/wp-content/themes/scroller/functions/images/bg.jpg" class="profile-img"></div><div class="rev-add-details"> <span class="promoter-name">Hitakshi</span> <span class="med-star"><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></span></div>
+            </div>
+              <p>"This is the absolute best out there"</p>
+          </div>
+              
+          
+          <div class="inner-video-section">
+            <video width="100%" controls>
+              <source src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/10000000_434474244254606_9036717175572115826_n.mp4?v=1610620530#t=1" type="video/mp4">
+            </video>
+            <div class="video-content">
+              <div class="content-img">
+                <img src="https://www.asimhy.com/wp-content/themes/scroller/functions/images/bg.jpg" class="profile-img"></div><div class="rev-add-details"> <span class="promoter-name">Charine Sethi</span> <span class="med-star"><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></span></div>
+            </div>
+              <p>"Ravel has helped my hair to repair damage and get healthy and happy"</p>
+          </div>
+          
+          <div class="inner-video-section">
+            <video width="100%" controls>
+              <source src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/194709B83B7370960ED9E038AC66C8B2_video_dashinit.mp4?v=1642671337#t=1" type="video/mp4">
+            </video>
+            <div class="video-content">
+              <div class="content-img">
+                <img src="https://www.asimhy.com/wp-content/themes/scroller/functions/images/bg.jpg" class="profile-img"></div><div class="rev-add-details"> <span class="promoter-name">Sakshi</span> <span class="med-star"><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i><i class="c-star"></i></span></div>
+            </div>
+              <p>"Permanent solution for my curly hair"</p>
+          </div>
+          
+     
+          <div style="clear:both"></div>
+          <a href="#select-pro" class="primary-btn-ques">BUY</a>
+        </div>
+        
+        
+      </div>
+
+      <div class='high_performing_section high_performing_section_change'>
+        <div class='container'>
+          <div class='high-performing-s-heading'>
+            <h3 class='high-performing-letter'>your one-in-fifty billion formula never contains...</h3>
+          </div>
+          <div class='high-performing-s-words high-performing-margin'>
+            <span>oxybenzone</span>
+            <span>phthalates</span>
+            <span>phenol</span>
+            <span>sulfates</span>
+            <span>petroleum</span>
+            <span>drying alcohols</span>
+            <span>parabens</span>
+            <span>formaldehyde</span>
+          </div>
+
+        </div>
+      </div>
+          
+      
+      <div class="highlight-reviews">
+        <h3>REVIEWS HIGHLIGHT</h3>
+        
+        <div class="inner-highlighted-review">
+          <div class="high-star"><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i></div>
+        <div class="hightlighted-review-content">
+          <h4>Ravel Personalised Kit Is Worth Getting</h4>
+          <p>I used Ravel personalised Kit for my dry and frizzy hair. The result was shown after two wash only. The conditioner is too good. I feel smoothy and bouncy hair.</p>
+          </div>
+        </div>
+        
+        <div class="inner-highlighted-review">
+          <div class="high-star"><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i></div>
+        <div class="hightlighted-review-content">
+          <h4>Ravel Shampoo and Conditioner</h4>
+          <p>I absolutely loved Ravel's shampoo and conditioner. I have seen positive visible changes in my hair and I love how it leaves my hair feeling soft and smelling as if I walked out of a garden of flowers.</p>
+          </div>
+        </div>
+        
+        <div class="inner-highlighted-review" style="border:none;">
+          <div class="high-star"><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i><i class="y-star"></i></div>
+        <div class="hightlighted-review-content">
+          <h4>It's awesome</h4>
+          <p>The conditioner was awesome I loved it...shampoo was also good..but it was not giving more foam...but i loved it too bcoz it's natural..thankyouu ravelcare</p>
+          </div>
+        </div>
+        <div style="clear:both"></div>
+        <a href="#rev-sec" class="more-rev-btn">SEE MORE REVIEWS <i class="w-star"></i></a>
+        
+      </div>
+      
+      {% comment %}
+      <div class="before-after-slider">
+        
+        <h2 class="c-section-title">See some of Ravel's transformation</h2>
+        
+         <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Untitled_design_80a55dd1-4dbf-4154-89ec-4190f9b738f3.png?v=1612857749" style="width:100%;" class="hom">
+     
+        
+        {% include 'ba-slider' %}
+        <a href="#select-pro" class="primary-btn-ques">BUY</a>
+      </div>
+      {% endcomment %}
+
+       <div class='pro_image-with_text2 product_section_name' id='nav_results_section'>
+          <div class='container'>
+            <div class='section_wrapper'>
+        <div class="product-detail-heading medium-up-hide">
+        <p class="eyebrow color-label">Results</p>
+        <div class="h2">Unretouched Real Results</div>
+      </div>
+      <div class="slide_img">
+     {% comment %}   <button class="slider_arrows prev_arrow"></button>
+        <button class="slider_arrows next_arrow"></button>
+        {% endcomment %}
+        <div class="slider_items js_section_image_slide">
+          <div class="slider_item_image">
+            <div class="image">
+              <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/jvjg.png?v=1665068169">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_info">
+        <p class="product-detail-list--heading label">Test panelists agree in just 21 days:</p>
+        <hr class='margin-hr'>
+        <ul class="product-detail-list">
+          <li><span>84% showed a reduction in Dandruff and flakes</span></li>
+          <li><span>91% saw stronger hair</span></li>
+          <li><span>94% noticed drastic reduction in hairfall</span></li>
+          <li><span>89% reported more volume and shine</span></li>
+           </ul>
+      </div>
+
+      </div>
+      </div>
+      </div>
+   
+          
+      <div class="ravel-features">
+        <h2 class="g--section-title">Science Backed clean ingredients</h2>
+        <p>Every product at Ravel we formulate is free of sulfates, parabens, GMOs, mineral oils, and is always cruelty-free.</p>
+        
+        <div class="feat-icon-text">
+      <div class="feat-ic-item">
+        <img alt="cruelty free logo" src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Cruelty_icon.png?v=1580542423">
+        <span>CRUELTY FREE</span>
+      </div>
+      <div class="feat-ic-item">
+        <img alt="sulfate free logo" src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Sulfate_icon.png?v=1580542423">
+        <span>SULFATE FREE</span>
+      </div>
+      <div class="feat-ic-item">
+        <img alt="paraben free logo" src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Paraben_icon.png?v=1580542423">
+        <span>PARABEN FREE</span>
+      </div>
+      <div class="feat-ic-item">
+          <img alt="gmo free logo" src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/GMO_icon_1.png?v=1627028898">
+          <span>GMO FREE</span>
+        </div>
+      <div class="feat-ic-item">
+        <img alt="phthalate free logo" src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/Phtlates_iconn.png?v=1580542424">
+        <span>PHTHALATE FREE</span>
+      </div> 
+    </div>
+      </div>
+      
+      
+      <div class="ravel-comparision">
+        <h2 class="c-section-title">Ravel v/s Mass produced products</h2>
+        
+        <img src="https://cdn.shopify.com/s/files/1/0256/1071/5182/files/VS.jpg?v=1665068536" style="width:100%;">
+     
+        <div class="ing-index-list clearfix">
+        
+        <ul>
+          <li>
+            <span class="u-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/> </svg></span><p>Addresses your specific goals and requirements</p>
+          </li>
+          <li>
+            
+           <span class="u-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/> </svg></span> <p>Mass produced with generalised concerns</p>
+           </li>
+          <li>
+            
+            <span class="u-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/> </svg></span><p>Free of all toxic and carcinogenic ingredients and according to clean beauty standards </p>
+          </li>
+          <li>
+             <span class="u-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/> </svg></span><p>Contains harmful toxins like Sulfates, Paraben, Formaldehydes, Phthalates, GMO, etc following no such standard</p>
+           </li>
+          <li>
+            
+            <span class="u-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/> </svg></span><p>Addresses your specific goals and requirements</p>
+             </li>
+          <li>
+            
+           <span class="u-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/> </svg></span><p>Mass produced with generalised concerns</p>
+             </li>
+        </ul>
+        <a href="#select-pro" class="primary-btn-ques">BUY</a>
+      </div>
+        
+        
+      </div>
+      
+      <div class="what-we-dont-use">
+        <h2 class="g--section-title">Ingredients we don't use.</h2>
+        <p>At Ravel, we are very careful about what goes into your hair. With the sole motive of improving your hair health, we keep toxic ingredients away from your customized formula. We avoid ingredients with low safety scores and are always working hard to improve or remove ingredients that don't comply with our clean beauty standards.
+<br><br>
+we avoid ingredients with low safety scores and are always working hard to improve or remove any ingredients which don't meet our standards</p>
+        
+        
+        <div class="ing-index-list clearfix">
+        
+        <ul>
+          <li>
+            <p>Sulfates</p>
+          </li>
+          <li>
+            <p>Benzalkylmonium Chloride</p>
+          </li>
+          <li>
+            <p>GMOs</p>
+          </li>
+          <li>
+            <p>Sulfites</p>
+          </li>
+          <li>
+            <p>Phthalates</p>
+          </li>
+          <li>
+            <p>EDTA</p>
+          </li>
+          <li>
+            <p>Mineral Oil</p>
+          </li>
+          <li>
+            <p>Ethanolamines</p>
+          </li>
+          <li>
+            <p>Petrolatum</p>
+          </li>
+          <li>
+            <p>Cocamide MEA</p>
+          </li>
+          <li>
+            <p>Parabens</p>
+          </li>
+          <li>
+            <p>Cocamide DEA</p>
+          </li>
+          <li>
+            <p>Formaldehyde</p>
+          </li>
+          <li>
+            <p>Nanoparticules</p>
+          </li>
+          <li>
+            <p>Imidazolidinyl Urea</p>
+          </li>
+          <li>
+            <p>Talc</p>
+          </li>
+          <li>
+            <p>Quaternium-15</p>
+          </li>
+          <li>
+            <p>Benzophenone</p>
+          </li>
+          
+          <li>
+            <p>Ethylhexylmethoxycinnamate</p>
+          </li>
+        
+          <li>
+            <p>Dairy Derivatives</p>
+          </li>
+          <li>
+            <p>Triclosan</p>
+          </li>
+          <li>
+            <p>Lanolin</p>
+          </li>
+          <li>
+            <p>Triclocarban</p>
+          </li>
+          <li>
+            <p>Methoxyethanol</p>
+          </li>
+          <li>
+            <p>BHA</p>
+          </li>
+          <li>
+            <p>Butoxyethanol</p>
+          </li>
+         
+        </ul>
+          
+        </div>
+        
+        
+      </div>
+      
+   
+    {% comment %}<div class='footer-review-quiz-page product_section_name' id='nav_reviews_section' style="visibility: hidden;">
+      <div id="rev-sec" class="c-faq faq-q-section clearfix">
+  <!-- <h2 class="g--section-title">Got questions?</h2>
+  <div class="faq-q-list">
+    <ul>
+      <li>
+        <h6>Why personalization</h6>
+        <div>
+          <p>All this while we had to end-up buying commercial products we had no control over. Mass-produced products cater to everyone and serve no one. With personalization, we are prioritizing each individual so that you get exactly what your hair needs.</p>
+        </div>
+      </li>
+      <li>
+        <h6>What if I am not sure what hair goals should I select?</h6>
+        <div>
+          <p>We are more than happy to help. Just give us a call on +91-9321438897 or drop an email on hello@ravelcare.com and our experts will guide you through the whole process. </p>
+        </div>
+      </li>
+      <li>
+        <h6>What ingredients are used in your products?</h6>
+        <div>
+          <p>At Ravel we source the finest natural ingredients from all across the world. Upon doing a thorough quality check, we use these clean ingredients in your products. In order to remain completely transparent in our approach, we have a complete list of ingredients on our Ingredients page.</p>
+        </div>
+      </li>
+      <li>
+        <h6>Do you use Sulfates, Parabens, Phtlates?</h6>
+        <div>
+          <p>No, we are very particular about what goes in your product. None of the products contain any harmful ingredients. For a complete list of ingredients please visit our ingredients page.</p>
+        </div>
+      </li>
+      <li>
+        <h6>What if I am not satisfied with my order?</h6>
+        <div>
+          <p>Just drop us a mail with all the necessary details on hello@ravelcare.com and we’ll replace your products. Afterall, you and your hair deserve top notch care. </p>
+        </div>
+      </li>
+      <li>
+        <h6>How do I place my order?</h6>
+        <div>
+          <p>Take our quiz and answer a few questions about your hair, then select the products of your choice followed by your address information and payment preferences. You can also call us at +91-9321438897 to place the order.</p>
+        </div>
+      </li>
+      <li>
+        <h6>What are the payment options available?</h6>
+        <div>
+          <p>Debit Card, Credit Card, Paytm wallet, UPI</p>
+        </div>
+      </li>
+      <li>
+        <h6>What if I want to make changes in my order after placing it?</h6>
+        <div>
+          <p>If you want to make changes in your formula, your address or any other details, just drop us a mail at hello@ravelcare.com or call us on +91-9321438897. We’ll be more than happy to help. </p>
+        </div>
+      </li>
+      <li>
+        <h6>How much does shipping cost?</h6>
+        <div>
+          <p>We offer free shipping on all our orders. </p>
+        </div>
+      </li>
+      <li>
+        <h6>How many days it will take for the order to reach?</h6>
+        <div>
+          <p>Our scientists take 2-3 days to create your products. Once, your product is ready it should reach at your doorstep in 4-5 working days approx.</p>
+        </div>
+      </li>
+      <li>
+        <h6>How can I track my order?</h6>
+        <div>
+          <p>You will receive an email as soon as we are done formulating your product. Once this is done, we will update you once the product is shipped. </p>
+        </div>
+      </li>
+      <li>
+        <h6>How do I know my order is being delivered today?</h6>
+        <div>
+          <p>On the day of your order delivery, you will receive notification from our shipping partner and the delivery person will contact you.</p>
+        </div>
+      </li> 
+    </ul>
+    <div class="full_div">
+      <a href="#select-pro" class="primary-btn-ques">BUY</a>
+    </div>
+  </div> -->
+        
+{% include 'judgeme_all_reviews' %}
+
+      <div class="full_div">
+      <a href="#select-pro" class="primary-btn-ques">BUY</a>
+    </div>  
+        
+</div>
+  </div>  {% endcomment %}
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+{%- comment -%}CD*{%- endcomment -%}
+<style>
+  .custom-selection .selection-products .pr-row { padding: 20px 20px 0; }
+  .custom-selection .selection-products .pr-row .sel-pr-img { width: 32%; }
+  .custom-selection .selection-products .pr-row .sel-pr-opt { width: 100%; }
+  .custom-selection .selection-products .pr-row .sel-pr-details { width: 68%; text-align: left; margin-top: 0; padding-left: 20px; }  
+  @media (max-width: 549px) {
+    .custom-selection .selection-products .pr-row img { width: 100%; }
+  }
+</style>
